@@ -19,7 +19,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   description,
 }: ExperienceItemProps) => {
   return (
-    <HStack w={"100%"} alignItems={"start"}>
+    <HStack w={"100%"} alignItems={"start"} gap={8}>
       <Text flex={1} textTransform={"uppercase"}>
         {start} — {end}
       </Text>

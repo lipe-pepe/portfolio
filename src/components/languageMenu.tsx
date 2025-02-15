@@ -50,7 +50,7 @@ const LanguageMenu = () => {
           </Text>
         </HStack>
       </MenuButton>
-      <MenuList bg={"none"} color={"gray.light"}>
+      <MenuList bg={"background.2"} color={"gray.light"}>
         <MenuItem bg={"none"} onClick={() => changeLanguage("en")}>
           EN
         </MenuItem>

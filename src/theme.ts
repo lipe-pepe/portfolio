@@ -3,9 +3,8 @@ import { extendTheme } from "@chakra-ui/react";
 
 const colors = {
   background: {
-    "1": "#0F2027",
-    "2": "#203A43",
-    "3": "#2C5364",
+    "1": "#141E30",
+    "2": "#243B55",
   },
   gray: {
     lightest: "#F2F2F2",

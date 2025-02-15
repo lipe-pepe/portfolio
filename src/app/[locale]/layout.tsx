@@ -26,6 +26,8 @@ export default async function LocaleLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
 
+  const paddingX = ["24rem"];
+
   return (
     <html lang={locale} className={fonts.inter.variable}>
       <body>
@@ -35,12 +37,12 @@ export default async function LocaleLayout({
               fontFamily={"inter"}
               minH={"100vh"}
               bgAttachment={"fixed"}
-              bgGradient={
-                "linear(to-r, background.1, background.2, background.3)"
-              }
+              bgGradient={"linear(to-r, background.1, background.2)"}
             >
-              <Box px={["20rem"]} pt={["6rem"]}>
-                <LanguageMenu />
+              <Box px={paddingX}>
+                <Box position={"fixed"} top={6} right={0} mr={paddingX}>
+                  <LanguageMenu />
+                </Box>
                 {children}
               </Box>
             </Box>

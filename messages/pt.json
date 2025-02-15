@@ -6,8 +6,11 @@
   "about": "Sobre mim",
   "experience": "Experiência",
   "projects": "Projetos",
+  "location": "Rio de Janeiro, Brasil",
   "about_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium nisi eget nisl suscipit, vel ultricies tortor mattis. Curabitur tincidunt sem lorem, sed vulputate erat facilisis quis. Donec blandit ut massa ac aliquam. In tempor elit tempus quam bibendum venenatis. Donec elementum ut orci in efficitur. Praesent non orci sed dolor blandit elementum sed sed lacus. Ut eget felis id neque commodo porttitor. Maecenas consectetur orci et posuere consequat.",
   "about_2": "Phasellus sem sem, dignissim ac tortor sed, faucibus elementum libero. Mauris sem erat, pulvinar ut sem ultrices, mattis semper tortor. Integer fermentum mattis est iaculis feugiat. Vivamus iaculis, metus ac sollicitudin blandit, neque arcu fringilla mauris, nec elementum lacus enim non tortor. Nam placerat leo ac nunc molestie, euismod mollis justo tincidunt. Donec velit neque, volutpat a urna eget, consequat ultrices ligula. Ut laoreet a velit eget fringilla. Suspendisse hendrerit velit justo, vel posuere dui varius vitae.",
   "experience_1_name": "Estagiário de Desenvolvimento Web",
-  "experience_2_name": "Desenvolvedor Full-Stack"
+  "experience_2_name": "Desenvolvedor Full-Stack",
+  "stiks_description_1": "Um jogo de adivinhação web para ser jogado com os amigos! O jogo é uma adaptação da 'Purrinha', um jogo de boteco brasileiro. É um projeto pessoal que vai receber atualizações constantemente.",
+  "stiks_description_2": "Decidi fazer esse projeto pessoal inteiramente sozinho. Para isso, estudei Websockets, UI Design, UX Design, banco de dados não relacional, entre outros tópicos. Foi um bom desafio que envolveu muita criatividade, dedicação e organização."
 }
