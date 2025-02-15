@@ -19,15 +19,15 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   description,
 }: ExperienceItemProps) => {
   return (
-    <HStack w={"100%"} alignItems={"start"} gap={8}>
+    <HStack w={"100%"} alignItems={"start"} gap={8} color={"white.dark"}>
       <Text flex={1} textTransform={"uppercase"}>
         {start} — {end}
       </Text>
       <VStack flex={3} alignItems={"start"}>
-        <Text>
+        <Text fontSize={"lg"}>
           {name} • {company}
         </Text>
-        <Text>{place}</Text>
+        <Text fontSize={"sm"}>{place}</Text>
         <Text>{description}</Text>
       </VStack>
     </HStack>

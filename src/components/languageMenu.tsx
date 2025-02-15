@@ -23,16 +23,16 @@ const LanguageMenu = () => {
   return (
     <Menu>
       <MenuButton
-        color={"gray.light"}
-        borderColor={"gray.light"}
         borderRadius={6}
         borderWidth={1}
+        borderColor={"white.dark"}
+        color={"white.dark"}
         px={2}
         py={1}
         _hover={{
-          borderColor: "white",
-          borderWidth: 2,
           color: "white",
+          borderWidth: 2,
+          borderColor: "white",
           transform: "scale(1.05)",
           transition:
             "transform 0.2s ease-in-out, background-color 0.2s ease-in-out",
@@ -50,7 +50,7 @@ const LanguageMenu = () => {
           </Text>
         </HStack>
       </MenuButton>
-      <MenuList bg={"background.2"} color={"gray.light"}>
+      <MenuList bg={"background.2"}>
         <MenuItem bg={"none"} onClick={() => changeLanguage("en")}>
           EN
         </MenuItem>

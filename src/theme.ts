@@ -6,11 +6,9 @@ const colors = {
     "1": "#141E30",
     "2": "#243B55",
   },
-  gray: {
-    lightest: "#F2F2F2",
-    light: "#D9D9D9",
-    base: "#BFBFBF",
-    dark: "#A6A6A6",
+  white: {
+    base: "#FFFFFF",
+    dark: "rgba(255,255,255,0.6)",
   },
 };
 

@@ -8,12 +8,16 @@ const Hero = () => {
   const t = useTranslations("Hero");
   return (
     <VStack width={"100%"} my={32} gap={12}>
-      <Text color={"white"} fontSize={"2xl"} fontWeight={"bold"}>
+      <Text fontSize={"2xl"} fontWeight={"bold"} color={"white.base"}>
         {t("heading")}
       </Text>
-      <Text fontWeight={"normal"} fontSize={"lg"} color={"gray.light"}>{`${t(
-        "intro"
-      )}${t("dev")}${t("intro_2")}`}</Text>
+      <Text fontWeight="normal" fontSize="lg" color="white.dark">
+        {t("intro")}
+        <Text as="span" color="white" fontWeight="bold">
+          {t("dev")}
+        </Text>
+        {t("intro_2")}
+      </Text>
       <HStack width={"75%"} justifyContent={"space-evenly"}>
         <SocialMediaIcon size="32px" icon={<FaLinkedin size={"100%"} />} />
         <SocialMediaIcon size="32px" icon={<FaGithub size={"100%"} />} />

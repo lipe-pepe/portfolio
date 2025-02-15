@@ -11,7 +11,7 @@ export default function HomePage() {
       <Box w={"50%"}>
         <Hero />
       </Box>
-      <HStack w={"100%"} alignItems={"start"} gap={12}>
+      <HStack w={"100%"} alignItems={"start"} gap={12} color={"white.dark"}>
         <Box flex={1}>
           <VStack alignItems={"start"}>
             <SectionButton text={t("about")} />
@@ -25,7 +25,6 @@ export default function HomePage() {
           textAlign={"start"}
           fontSize={"md"}
           fontWeight={"normal"}
-          color={"gray.base"}
         >
           <Box>
             <Text>{t("about_1")}</Text>

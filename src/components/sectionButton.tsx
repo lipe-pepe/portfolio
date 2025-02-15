@@ -10,7 +10,6 @@ const SectionButton: React.FC<SectionButtonProps> = ({
 }: SectionButtonProps) => {
   return (
     <Text
-      color={"gray.lightest"}
       cursor={"pointer"}
       fontSize={"sm"}
       fontWeight={"semibold"}

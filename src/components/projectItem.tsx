@@ -26,9 +26,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       </AspectRatio>
 
       <VStack flex={3} alignItems={"start"}>
-        <Text fontSize={"lg"} color={"gray.lightest"}>
-          {name}
-        </Text>
+        <Text fontSize={"lg"}>{name}</Text>
         <Text fontSize={"md"}>{description}</Text>
         {description2 && <Text fontSize={"md"}>{description2}</Text>}
       </VStack>
