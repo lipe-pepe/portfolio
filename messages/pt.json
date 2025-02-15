@@ -1,6 +1,13 @@
 {
-  "HomePage": {
-    "title": "Olá, mundo!",
-    "about": "Sobre"
-  }
+  "heading": "Oi, meu nome é Felipe.",
+  "intro": "Mas muitos me chamam só de Pêpe, meu sobrenome. Sou um ",
+  "dev": "desenvolvedor full-stack",
+  "intro_2": "  com espírito empreendedor, apaixonado por projetos que envolvem software, criatividade e desafio.",
+  "about": "Sobre mim",
+  "experience": "Experiência",
+  "projects": "Projetos",
+  "about_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium nisi eget nisl suscipit, vel ultricies tortor mattis. Curabitur tincidunt sem lorem, sed vulputate erat facilisis quis. Donec blandit ut massa ac aliquam. In tempor elit tempus quam bibendum venenatis. Donec elementum ut orci in efficitur. Praesent non orci sed dolor blandit elementum sed sed lacus. Ut eget felis id neque commodo porttitor. Maecenas consectetur orci et posuere consequat.",
+  "about_2": "Phasellus sem sem, dignissim ac tortor sed, faucibus elementum libero. Mauris sem erat, pulvinar ut sem ultrices, mattis semper tortor. Integer fermentum mattis est iaculis feugiat. Vivamus iaculis, metus ac sollicitudin blandit, neque arcu fringilla mauris, nec elementum lacus enim non tortor. Nam placerat leo ac nunc molestie, euismod mollis justo tincidunt. Donec velit neque, volutpat a urna eget, consequat ultrices ligula. Ut laoreet a velit eget fringilla. Suspendisse hendrerit velit justo, vel posuere dui varius vitae.",
+  "experience_1_name": "Estagiário de Desenvolvimento Web",
+  "experience_2_name": "Desenvolvedor Full-Stack"
 }

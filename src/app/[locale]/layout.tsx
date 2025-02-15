@@ -3,6 +3,9 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Providers } from "../providers";
+import { fonts } from "../fonts";
+import { Box } from "@chakra-ui/react";
+import LanguageMenu from "@/components/languageMenu";
 
 export default async function LocaleLayout({
   children,
@@ -24,10 +27,24 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={fonts.inter.variable}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Providers>{children}</Providers>
+          <Providers>
+            <Box
+              fontFamily={"inter"}
+              minH={"100vh"}
+              bgAttachment={"fixed"}
+              bgGradient={
+                "linear(to-r, background.1, background.2, background.3)"
+              }
+            >
+              <Box px={["20rem"]} pt={["6rem"]}>
+                <LanguageMenu />
+                {children}
+              </Box>
+            </Box>
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>
