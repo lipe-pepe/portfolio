@@ -1,5 +1,5 @@
 import ExperienceItem from "@/components/experienceItem";
-import ProjectItem from "@/components/projectItem";
+import Hero from "@/components/hero";
 import SectionButton from "@/components/sectionButton";
 import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import { useTranslations } from "next-intl";
@@ -7,15 +7,10 @@ import { useTranslations } from "next-intl";
 export default function HomePage() {
   const t = useTranslations();
   return (
-    <VStack textAlign={"center"} gap={32}>
-      <VStack width={"50%"}>
-        <Text color={"white"} fontSize={"2xl"} fontWeight={"bold"}>
-          {t("heading")}
-        </Text>
-        <Text fontWeight={"normal"} fontSize={"lg"} color={"gray.light"}>{`${t(
-          "intro"
-        )}${t("dev")}${t("intro_2")}`}</Text>
-      </VStack>
+    <VStack textAlign={"center"}>
+      <Box w={"50%"}>
+        <Hero />
+      </Box>
       <HStack w={"100%"} alignItems={"start"} gap={12}>
         <Box flex={1}>
           <VStack alignItems={"start"}>
@@ -54,9 +49,9 @@ export default function HomePage() {
               description="FAZER AQUIIII"
             />
           </VStack>
-          <VStack>
+          {/* <VStack>
             <ProjectItem name="Stiks!" image="example.jpg" />
-          </VStack>
+          </VStack> */}
         </VStack>
       </HStack>
     </VStack>

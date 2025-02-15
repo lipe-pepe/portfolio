@@ -2,17 +2,19 @@ import { Box } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 interface SocialMediaIconProps {
+  size: string;
   icon: ReactNode;
 }
 
 const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({
+  size,
   icon,
 }: SocialMediaIconProps) => {
   return (
     <Box
       cursor={"pointer"}
       color={"gray.base"}
-      boxSize={"20px"}
+      boxSize={size}
       _hover={{
         color: "white",
         transform: "scale(1.05)",

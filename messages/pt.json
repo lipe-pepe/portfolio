@@ -1,8 +1,10 @@
 {
-  "heading": "Oi, meu nome é Felipe.",
-  "intro": "Mas muitos me chamam só de Pêpe, meu sobrenome. Sou um ",
-  "dev": "desenvolvedor full-stack",
-  "intro_2": "  com espírito empreendedor, apaixonado por projetos que envolvem software, criatividade e desafio.",
+  "Hero": {
+    "heading": "Oi, meu nome é Felipe Pêpe.",
+    "intro": "Sou um ",
+    "dev": "desenvolvedor full-stack",
+    "intro_2": "  com espírito empreendedor, apaixonado por projetos que envolvem software, criatividade e desafio."
+  },
   "about": "Sobre mim",
   "experience": "Experiência",
   "projects": "Projetos",
