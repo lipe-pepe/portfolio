@@ -25,8 +25,8 @@ const LanguageMenu = () => {
       <MenuButton
         borderRadius={6}
         borderWidth={1}
-        borderColor={"white.dark"}
-        color={"white.dark"}
+        borderColor={"white.darkest"}
+        color={"white.darkest"}
         px={2}
         py={1}
         _hover={{

@@ -14,7 +14,7 @@ const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({
     <Box
       cursor={"pointer"}
       boxSize={size}
-      color={"white.dark"}
+      color={"white.darkest"}
       _hover={{
         color: "white.base",
         transform: "scale(1.05)",

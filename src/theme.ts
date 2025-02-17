@@ -8,7 +8,8 @@ const colors = {
   },
   white: {
     base: "#FFFFFF",
-    dark: "rgba(255,255,255,0.6)",
+    dark: "rgba(255,255,255,0.8)",
+    darkest: "rgba(255,255,255,0.6)",
   },
 };
 

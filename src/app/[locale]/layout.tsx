@@ -39,12 +39,10 @@ export default async function LocaleLayout({
               bgAttachment={"fixed"}
               bgGradient={"linear(to-r, background.1, background.2)"}
             >
-              <Box px={paddingX}>
-                <Box position={"fixed"} top={6} right={0} mr={paddingX}>
-                  <LanguageMenu />
-                </Box>
-                {children}
+              <Box position={"fixed"} top={6} right={0} mr={paddingX}>
+                <LanguageMenu />
               </Box>
+              {children}
             </Box>
           </Providers>
         </NextIntlClientProvider>
