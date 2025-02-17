@@ -58,7 +58,6 @@ export default function HomePage() {
             <SectionButton text={t("experience")} />
             <SectionButton text={t("projects")} />
             <SectionButton text={t("academic")} />
-            <SectionButton text={t("courses")} />
           </VStack>
           <VStack alignItems={"start"} gap={8}>
             <HStack gap={6}>

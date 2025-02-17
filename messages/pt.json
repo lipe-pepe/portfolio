@@ -15,7 +15,7 @@
   "About": {
     "title": "Sobre mim",
     "about_0": "Eu sou um desenvolvedor web brasileiro e moro no Rio de Janeiro. Estou finalizando o curso de Engenharia da Computação e Informação na UFRJ (Universidade Federal do Rio de Janeiro).",
-    "about_1": "Apesar de ter experiência de trabalho com web, também tenho interesse por desenvolvimento mobile e desenvolvimento de games, já explorei um pouco essas áreas. Estou em busca de novos desafios para minha carreira, que possam agregar em ",
+    "about_1": "Apesar de ter experiência de trabalho com web, também tenho interesse por desenvolvimento mobile e desenvolvimento de games. Já explorei essas áreas. Estou em busca de novos desafios para minha carreira, que possam agregar em ",
     "things": "conhecimento, experiência e autonomia!",
     "about_2": "O que me encanta no trabalho é poder usar a ",
     "creativity": "criatividade",
@@ -40,7 +40,7 @@
   "Projects": {
     "title": "Projetos",
     "stiks_desc1": "Um jogo online de adivinhação para ser jogado com os amigos na web! O jogo é uma adaptação da 'Purrinha', um jogo de boteco brasileiro. É um projeto pessoal que vai receber atualizações constantemente.",
-    "stiks_desc2": "Decidi fazer esse projeto pessoal inteiramente sozinho. Para isso, estudei Websockets, UI Design, UX Design, banco de dados não relacional, entre outros tópicos. Foi um bom desafio que envolveu muita criatividade, dedicação e organização.",
+    "stiks_desc2": "Decidi fazer esse projeto inteiramente sozinho. Para isso, estudei Websockets, UI Design, UX Design, banco de dados não relacional, entre outros tópicos. Foi um bom desafio que envolveu muita criatividade, dedicação e organização.",
     "criasound_desc1": "Desenvolvi as landing pages da criasound, um laboratório de música e experiência artística.",
     "personal_site": "Site pessoal",
     "personal_site_desc1": "A versão antiga desse site aqui! Fiz esse projeto seguindo guias oficiais do NextJS. Já não está mais no ar, mas o código pode ser encontrado no meu Github. "

@@ -18,7 +18,7 @@ const AcademicItem: React.FC<AcademicItemProps> = ({
 }: AcademicItemProps) => {
   return (
     <HStack w={"100%"} alignItems={"start"} gap={8} color={"white.darkest"}>
-      <Text flex={1} textTransform={"uppercase"} fontSize={"sm"}>
+      <Text flex={1} fontSize={"sm"}>
         {start} — {end}
       </Text>
       <VStack flex={3} alignItems={"start"} fontSize={"md"}>
