@@ -4,15 +4,13 @@ import React from "react";
 interface ProjectItemProps {
   image: string;
   name: string;
-  description: string;
-  description2?: string;
+  description: string[];
 }
 
 const ProjectItem: React.FC<ProjectItemProps> = ({
   image,
   name,
   description,
-  description2,
 }: ProjectItemProps) => {
   return (
     <HStack w={"100%"} alignItems={"start"} gap={8}>
@@ -27,8 +25,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 
       <VStack flex={3} alignItems={"start"}>
         <Text fontSize={"lg"}>{name}</Text>
-        <Text fontSize={"md"}>{description}</Text>
-        {description2 && <Text fontSize={"md"}>{description2}</Text>}
+        {description.map((d, index) => (
+          <Text key={`project_item_${name}_${index}`}>{d}</Text>
+        ))}
       </VStack>
     </HStack>
   );

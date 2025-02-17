@@ -1,11 +1,17 @@
-import ExperienceItem from "@/components/experienceItem";
+"use client";
+
+import AcademicSection from "@/components/sections/academicSection";
 import Hero from "@/components/hero";
 import SectionButton from "@/components/sectionButton";
 import SocialMediaIcon from "@/components/socialMediaIcon";
 import { Box, Center, HStack, Text, VStack } from "@chakra-ui/react";
 import { useTranslations } from "next-intl";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdPlace } from "react-icons/md";
+import CoursesSection from "@/components/sections/coursesSection";
+import ExperienceSection from "@/components/sections/experienceSection";
+import ProjectsSection from "@/components/sections/projectsSection";
+import AboutSection from "@/components/sections/aboutSection";
 
 export default function HomePage() {
   const t = useTranslations();
@@ -19,6 +25,7 @@ export default function HomePage() {
       overflowY="scroll"
       height="100vh"
       scrollSnapType="y mandatory" // Ativa o scroll snap no eixo Y
+      scrollBehavior={"smooth"}
     >
       {/* Hero */}
       <Center
@@ -47,21 +54,14 @@ export default function HomePage() {
           position="sticky" // Mantém fixo ao rolar
           top="0" // Fixa no topo da págin
         >
-          <VStack alignItems={"start"}>
+          <VStack alignItems={"start"} gap={8}>
             <SectionButton text={t("about")} />
             <SectionButton text={t("experience")} />
             <SectionButton text={t("projects")} />
+            <SectionButton text={t("academic")} />
+            <SectionButton text={t("courses")} />
           </VStack>
-          <VStack alignItems={"start"}>
-            <HStack>
-              <SocialMediaIcon
-                size="24px"
-                icon={<MdEmail size={"100%"} />}
-                link="mailto:felipepepe21@gmail.com"
-              />
-              <Text>felipepepe21@gmail.com</Text>
-            </HStack>
-
+          <VStack alignItems={"start"} gap={8}>
             <HStack gap={6}>
               <SocialMediaIcon
                 size="24px"
@@ -74,6 +74,18 @@ export default function HomePage() {
                 link="https://github.com/lipe-pepe"
               />
             </HStack>
+            <HStack>
+              <SocialMediaIcon
+                size="24px"
+                icon={<MdEmail size={"100%"} />}
+                link="mailto:felipepepe21@gmail.com"
+              />
+              <Text>felipepepe21@gmail.com</Text>
+            </HStack>
+            <HStack>
+              <MdPlace />
+              <Text>{t("location")}</Text>
+            </HStack>
           </VStack>
         </VStack>
         {/* Sections */}
@@ -84,39 +96,14 @@ export default function HomePage() {
           textAlign={"start"}
           fontSize={"md"}
           fontWeight={"normal"}
+          alignItems={"start"}
         >
-          <Box>
-            <Text>{t("about_1")}</Text>
-            <Text>{t("about_2")}</Text>
-            <Text>{t("about_2")}</Text>
-            <Text>{t("about_2")}</Text>
-            <Text>{t("about_2")}</Text>
-            <Text>{t("about_2")}</Text>
-            <Text>{t("about_2")}</Text>
-            <Text>{t("about_2")}</Text>
-            <Text>{t("about_2")}</Text>
-          </Box>
-          <VStack w={"100%"}>
-            <ExperienceItem
-              name={t("experience_2_name")}
-              start="2024"
-              end="2025"
-              place="São Paulo"
-              company="Exame Corporate Education"
-              description="FAZER AQUIIII"
-            />
-            <ExperienceItem
-              name={t("experience_1_name")}
-              start="2021"
-              end="2024"
-              place="Rio de Janeiro"
-              company="Witseed"
-              description="FAZER AQUIIII"
-            />
-          </VStack>
-          {/* <VStack>
-            <ProjectItem name="Stiks!" image="example.jpg" />
-          </VStack> */}
+          {/* About */}
+          <AboutSection />
+          <ExperienceSection />
+          <ProjectsSection />
+          <AcademicSection />
+          <CoursesSection />
         </VStack>
       </HStack>
     </VStack>

@@ -1,4 +1,4 @@
-import { HStack, Text, VStack } from "@chakra-ui/react";
+import { HStack, List, ListItem, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 
 interface ExperienceItemProps {
@@ -7,7 +7,7 @@ interface ExperienceItemProps {
   end: string;
   company: string;
   place: string;
-  description: string;
+  description: string[];
 }
 
 const ExperienceItem: React.FC<ExperienceItemProps> = ({
@@ -28,7 +28,11 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
           {name} • {company}
         </Text>
         <Text fontSize={"sm"}>{place}</Text>
-        <Text>{description}</Text>
+        <List>
+          {description.map((d, index) => (
+            <ListItem key={`exp_item_${name}_${index}`}>{d}</ListItem>
+          ))}
+        </List>
       </VStack>
     </HStack>
   );

@@ -5,14 +5,54 @@
     "dev": "desenvolvedor full-stack",
     "intro_2": "  com espírito empreendedor, apaixonado por projetos que envolvem software, criatividade e desafio."
   },
+
   "about": "Sobre mim",
   "experience": "Experiência",
   "projects": "Projetos",
+  "academic": "Formação Acadêmica",
+  "courses": "Cursos",
   "location": "Rio de Janeiro, Brasil",
-  "about_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium nisi eget nisl suscipit, vel ultricies tortor mattis. Curabitur tincidunt sem lorem, sed vulputate erat facilisis quis. Donec blandit ut massa ac aliquam. In tempor elit tempus quam bibendum venenatis. Donec elementum ut orci in efficitur. Praesent non orci sed dolor blandit elementum sed sed lacus. Ut eget felis id neque commodo porttitor. Maecenas consectetur orci et posuere consequat.",
-  "about_2": "Phasellus sem sem, dignissim ac tortor sed, faucibus elementum libero. Mauris sem erat, pulvinar ut sem ultrices, mattis semper tortor. Integer fermentum mattis est iaculis feugiat. Vivamus iaculis, metus ac sollicitudin blandit, neque arcu fringilla mauris, nec elementum lacus enim non tortor. Nam placerat leo ac nunc molestie, euismod mollis justo tincidunt. Donec velit neque, volutpat a urna eget, consequat ultrices ligula. Ut laoreet a velit eget fringilla. Suspendisse hendrerit velit justo, vel posuere dui varius vitae.",
-  "experience_1_name": "Estagiário de Desenvolvimento Web",
-  "experience_2_name": "Desenvolvedor Full-Stack",
-  "stiks_description_1": "Um jogo de adivinhação web para ser jogado com os amigos! O jogo é uma adaptação da 'Purrinha', um jogo de boteco brasileiro. É um projeto pessoal que vai receber atualizações constantemente.",
-  "stiks_description_2": "Decidi fazer esse projeto pessoal inteiramente sozinho. Para isso, estudei Websockets, UI Design, UX Design, banco de dados não relacional, entre outros tópicos. Foi um bom desafio que envolveu muita criatividade, dedicação e organização."
+
+  "About": {
+    "title": "Sobre mim",
+    "about_0": "Eu sou um desenvolvedor web brasileiro e moro no Rio de Janeiro. Estou finalizando o curso de Engenharia da Computação e Informação na UFRJ ",
+    "ufrj": "(Universidade Federal do Rio de Janeiro)",
+    "about_1": ". Apesar de ter experiência de trabalho com web, também tenho interesse por desenvolvimento mobile e desenvolvimento de games, já explorei um pouco essas áreas. Estou em busca de novos desafios para minha carreira, que possam agregar em conhecimento, experiência e autonomia!  ",
+    "about_2": "O que me encanta no trabalho é poder usar a ",
+    "creativity": "criatividade",
+    "about_3": " e o conhecimento para construir novos projetos e fazer as coisas acontecerem. Não há nada melhor do que implementar uma nova funcionalidade, ultrapassar seus desafios e ver o usuário final tirando proveito da nossa criação. Essa é minha motivação!",
+    "about_4": "Além disso, sou apaixonado por games e cinema e entusiasta do teatro! Sou ator de teatro registrado e estou desbravando o trabalho de direção também. Acho inspiradora a arte de contar histórias!"
+  },
+
+  "Experience": {
+    "title": "Experiência",
+    "1_name": "Estagiário de Desenvolvimento Web",
+    "1_desc1": "Desenvolvimento web utilizando Ruby on Rails e NextJS para alavancar a plataforma de educação corporativa Witseed by Exame",
+    "2_name": "Desenvolvedor Full-Stack",
+    "2_desc1": "Desenvolvimento web utilizando Ruby on Rails e NextJS para alavancar a plataforma de educação corporativa Witseed by Exame",
+    "2_desc2": "Ponto focal de tecnologia em reuniões com clientes para definição e desenvolvimento de integrações de Single Sign On (SSO)",
+    "2_desc3": "Participação em tomadas de decisão relacionadas ao produto e condução do suporte de atendimento aos clientes",
+    "sp": "São Paulo, Brasil",
+    "rj": "Rio de Janeiro, Brasil"
+  },
+
+  "Projects": {
+    "title": "Projetos",
+    "stiks_desc1": "Um jogo de adivinhação web para ser jogado com os amigos! O jogo é uma adaptação da 'Purrinha', um jogo de boteco brasileiro. É um projeto pessoal que vai receber atualizações constantemente.",
+    "stiks_desc2": "Decidi fazer esse projeto pessoal inteiramente sozinho. Para isso, estudei Websockets, UI Design, UX Design, banco de dados não relacional, entre outros tópicos. Foi um bom desafio que envolveu muita criatividade, dedicação e organização."
+  },
+
+  "Academic": {
+    "title": "Formação Acadêmica",
+    "eletronic": "Engenharia Eletrônica e de Computação",
+    "ufrj": "UFRJ - Universidade Federal do Rio de Janeiro",
+    "graduation": "Graduação",
+    "eci": "Engenharia de Computação e Informação",
+    "highschool": "Ensino Médio",
+    "anglo": "Colégio Anglo-Americano"
+  },
+
+  "Courses": {
+    "title": "Cursos"
+  }
 }
