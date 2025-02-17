@@ -1,8 +1,11 @@
 import ExperienceItem from "@/components/experienceItem";
 import Hero from "@/components/hero";
 import SectionButton from "@/components/sectionButton";
+import SocialMediaIcon from "@/components/socialMediaIcon";
 import { Box, Center, HStack, Text, VStack } from "@chakra-ui/react";
 import { useTranslations } from "next-intl";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function HomePage() {
   const t = useTranslations();
@@ -17,6 +20,7 @@ export default function HomePage() {
       height="100vh"
       scrollSnapType="y mandatory" // Ativa o scroll snap no eixo Y
     >
+      {/* Hero */}
       <Center
         scrollSnapAlign="start" // Define o ponto de snap
       >
@@ -24,6 +28,7 @@ export default function HomePage() {
           <Hero />
         </Box>
       </Center>
+      {/* Content */}
       <HStack
         w={"100%"}
         alignItems={"start"}
@@ -32,14 +37,48 @@ export default function HomePage() {
         height="auto"
         scrollSnapAlign="start" // Define que este elemento será o próximo snap
       >
-        <Box flex={1}>
+        {/* Indexes */}
+        <VStack
+          paddingY={24}
+          h={"100vh"}
+          flex={1}
+          alignItems={"start"}
+          justifyContent={"space-between"}
+          position="sticky" // Mantém fixo ao rolar
+          top="0" // Fixa no topo da págin
+        >
           <VStack alignItems={"start"}>
             <SectionButton text={t("about")} />
             <SectionButton text={t("experience")} />
             <SectionButton text={t("projects")} />
           </VStack>
-        </Box>
+          <VStack alignItems={"start"}>
+            <HStack>
+              <SocialMediaIcon
+                size="24px"
+                icon={<MdEmail size={"100%"} />}
+                link="mailto:felipepepe21@gmail.com"
+              />
+              <Text>felipepepe21@gmail.com</Text>
+            </HStack>
+
+            <HStack gap={6}>
+              <SocialMediaIcon
+                size="24px"
+                icon={<FaLinkedin size={"100%"} />}
+                link="https://www.linkedin.com/in/felipe-pepe/"
+              />
+              <SocialMediaIcon
+                size="24px"
+                icon={<FaGithub size={"100%"} />}
+                link="https://github.com/lipe-pepe"
+              />
+            </HStack>
+          </VStack>
+        </VStack>
+        {/* Sections */}
         <VStack
+          paddingY={24}
           gap={40}
           flex={2}
           textAlign={"start"}
