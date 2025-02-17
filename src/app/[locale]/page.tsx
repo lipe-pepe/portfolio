@@ -8,7 +8,6 @@ import { Box, Center, HStack, Text, VStack } from "@chakra-ui/react";
 import { useTranslations } from "next-intl";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail, MdPlace } from "react-icons/md";
-import CoursesSection from "@/components/sections/coursesSection";
 import ExperienceSection from "@/components/sections/experienceSection";
 import ProjectsSection from "@/components/sections/projectsSection";
 import AboutSection from "@/components/sections/aboutSection";
@@ -103,7 +102,6 @@ export default function HomePage() {
           <ExperienceSection />
           <ProjectsSection />
           <AcademicSection />
-          <CoursesSection />
         </VStack>
       </HStack>
     </VStack>

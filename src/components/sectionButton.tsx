@@ -13,15 +13,13 @@ const SectionButton: React.FC<SectionButtonProps> = ({
       color={"white.dark"}
       cursor={"pointer"}
       fontSize={"sm"}
-      fontWeight={"regular"}
+      fontWeight={"normal"}
       textTransform={"uppercase"}
       letterSpacing={"widest"}
       _hover={{
         color: "text",
         fontWeight: "semibold",
-        transform: "scale(1.05)",
-        transition:
-          "transform 0.2s ease-in-out, color 0.2s ease-in-out, font-weight 0.2s ease-in-out",
+        transition: "color 0.2s ease-in-out, font-weight 0.2s ease-in-out",
       }}
     >
       {text}

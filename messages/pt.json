@@ -10,7 +10,6 @@
   "experience": "Experiência",
   "projects": "Projetos",
   "academic": "Formação Acadêmica",
-  "courses": "Cursos",
   "location": "Rio de Janeiro, Brasil",
 
   "About": {
@@ -53,9 +52,5 @@
     "eci": "Engenharia de Computação e Informação",
     "highschool": "Ensino Médio",
     "anglo": "Colégio Anglo-Americano"
-  },
-
-  "Courses": {
-    "title": "Cursos"
   }
 }

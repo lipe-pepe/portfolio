@@ -10,7 +10,7 @@ interface AcademicItemProps {
 }
 
 const AcademicItem: React.FC<AcademicItemProps> = ({
-  //   type,
+  type,
   place,
   name,
   start,
@@ -18,13 +18,17 @@ const AcademicItem: React.FC<AcademicItemProps> = ({
 }: AcademicItemProps) => {
   return (
     <HStack w={"100%"} alignItems={"start"} gap={8} color={"white.darkest"}>
-      <Text flex={1} textTransform={"uppercase"}>
+      <Text flex={1} textTransform={"uppercase"} fontSize={"sm"}>
         {start} — {end}
       </Text>
-      <VStack flex={3} alignItems={"start"}>
-        <Text fontSize={"lg"} color={"white.dark"}>
-          {name}
-        </Text>
+      <VStack flex={3} alignItems={"start"} fontSize={"md"}>
+        <HStack>
+          <Text color={"white"} fontWeight={"medium"}>
+            {name}
+          </Text>
+          {type && <Text>• {type}</Text>}
+        </HStack>
+
         <Text fontSize={"sm"}>{place}</Text>
       </VStack>
     </HStack>
