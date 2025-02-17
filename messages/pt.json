@@ -53,6 +53,8 @@
     "graduation": "Graduação",
     "eci": "Engenharia de Computação e Informação",
     "highschool": "Ensino Médio",
-    "anglo": "Colégio Anglo-Americano"
+    "anglo": "Colégio Anglo-Americano",
+    "incomplete": "incompleto",
+    "prevision": "previsão"
   }
 }

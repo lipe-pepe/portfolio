@@ -1,3 +1,60 @@
 {
-  "heading": "Hello world!"
+  "Hero": {
+    "heading": "Hi, my name is Felipe Pêpe.",
+    "intro": "I am a ",
+    "dev": "full-stack developer",
+    "intro_2": " with an entrepreneurial spirit, passionate about projects that involve software, creativity, and challenge."
+  },
+
+  "about": "About me",
+  "experience": "Experience",
+  "projects": "Projects",
+  "academic": "Academic Background",
+  "location": "Rio de Janeiro, Brazil",
+
+  "About": {
+    "title": "About me",
+    "about_0": "I am a Brazilian web developer living in Rio de Janeiro. I am completing my degree in Computer and Information Engineering at UFRJ (Federal University of Rio de Janeiro).",
+    "about_1": "Although I have work experience with web development, I am also interested in mobile development and game development. I have explored these areas. I am looking for new challenges in my career that can contribute to my ",
+    "things": "knowledge, experience, and autonomy!",
+    "about_2": "What excites me about work is being able to use ",
+    "creativity": "creativity",
+    "about_3": " and knowledge to build new projects and ",
+    "happen": "make things happen",
+    "about_4": ". There is nothing better than implementing a new feature, overcoming its challenges, and seeing the end user benefit from our creation. That is my motivation!",
+    "about_5": "Beyond the tech world, I am passionate about games and cinema and an enthusiast of theater! I am a theater actor and am also exploring directing. I find the art of storytelling truly inspiring!"
+  },
+
+  "Experience": {
+    "title": "Experience",
+    "1_name": "Web Development Intern",
+    "1_desc1": "Web development using Ruby on Rails and Next.js to enhance the corporate education platform Witseed by Exame",
+    "2_name": "Full-Stack Developer",
+    "2_desc1": "Web development using Ruby on Rails and Next.js to enhance the corporate education platform Witseed by Exame",
+    "2_desc2": "Technology focal point in client meetings for defining and developing Single Sign-On (SSO) integrations",
+    "2_desc3": "Participation in product-related decision-making and managing customer support services",
+    "sp": "São Paulo, Brazil",
+    "rj": "Rio de Janeiro, Brazil"
+  },
+
+  "Projects": {
+    "title": "Projects",
+    "stiks_desc1": "An online guessing game to play with friends on the web! The game is an adaptation of 'Purrinha,' a Brazilian pub game. This is a personal project that will receive constant updates.",
+    "stiks_desc2": "I decided to develop this project entirely by myself. To do so, I studied WebSockets, UI Design, UX Design, non-relational databases, among other topics. It was a great challenge that required a lot of creativity, dedication, and organization.",
+    "criasound_desc1": "I developed the landing pages for criasound, a music and artistic experience laboratory.",
+    "personal_site": "Personal website",
+    "personal_site_desc1": "The old version of this website! I created this project following Next.js official guides. It is no longer live, but the code can be found on my GitHub."
+  },
+
+  "Academic": {
+    "title": "Academic Background",
+    "eletronic": "Electronic and Computer Engineering",
+    "ufrj": "UFRJ - Federal University of Rio de Janeiro",
+    "graduation": "Undergraduate",
+    "eci": "Computer and Information Engineering",
+    "highschool": "High School",
+    "anglo": "Colégio Anglo-Americano",
+    "incomplete": "incomplete",
+    "prevision": "prevision"
+  }
 }
