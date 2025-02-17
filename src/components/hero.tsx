@@ -27,9 +27,21 @@ const Hero = () => {
           {t("intro_2")}
         </Text>
         <HStack width={"75%"} justifyContent={"space-evenly"}>
-          <SocialMediaIcon size="32px" icon={<FaLinkedin size={"100%"} />} />
-          <SocialMediaIcon size="32px" icon={<FaGithub size={"100%"} />} />
-          <SocialMediaIcon size="32px" icon={<MdEmail size={"100%"} />} />
+          <SocialMediaIcon
+            size="32px"
+            icon={<FaLinkedin size={"100%"} />}
+            link="https://www.linkedin.com/in/felipe-pepe/"
+          />
+          <SocialMediaIcon
+            size="32px"
+            icon={<FaGithub size={"100%"} />}
+            link="https://github.com/lipe-pepe"
+          />
+          <SocialMediaIcon
+            size="32px"
+            icon={<MdEmail size={"100%"} />}
+            link="mailto:felipepepe21@gmail.com"
+          />
         </HStack>
       </VStack>
       <Center position={"absolute"} bottom={12}>

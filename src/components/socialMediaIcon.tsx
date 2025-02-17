@@ -4,11 +4,13 @@ import { ReactNode } from "react";
 interface SocialMediaIconProps {
   size: string;
   icon: ReactNode;
+  link: string;
 }
 
 const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({
   size,
   icon,
+  link,
 }: SocialMediaIconProps) => {
   return (
     <Box
@@ -22,7 +24,9 @@ const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({
           "transform 0.2s ease-in-out, background-color 0.2s ease-in-out",
       }}
     >
-      {icon}
+      <a href={link} target="_blank">
+        {icon}
+      </a>
     </Box>
   );
 };
