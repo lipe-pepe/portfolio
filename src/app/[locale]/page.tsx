@@ -11,11 +11,23 @@ import { MdEmail, MdPlace } from "react-icons/md";
 import ExperienceSection from "@/components/sections/experienceSection";
 import ProjectsSection from "@/components/sections/projectsSection";
 import AboutSection from "@/components/sections/aboutSection";
+import React, { useRef } from "react";
 
 export default function HomePage() {
   const t = useTranslations();
 
   const paddingX = ["24rem"];
+
+  const aboutRef = useRef<HTMLDivElement>(null!); // Força que não será null
+  const expRef = useRef<HTMLDivElement>(null!);
+  const projectsRef = useRef<HTMLDivElement>(null!);
+  const academicRef = useRef<HTMLDivElement>(null!);
+
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
 
   return (
     <VStack
@@ -54,10 +66,22 @@ export default function HomePage() {
           top="0" // Fixa no topo da págin
         >
           <VStack alignItems={"start"} gap={8}>
-            <SectionButton text={t("about")} />
-            <SectionButton text={t("experience")} />
-            <SectionButton text={t("projects")} />
-            <SectionButton text={t("academic")} />
+            <SectionButton
+              text={t("about")}
+              onClick={() => scrollToSection(aboutRef)}
+            />
+            <SectionButton
+              text={t("experience")}
+              onClick={() => scrollToSection(expRef)}
+            />
+            <SectionButton
+              text={t("projects")}
+              onClick={() => scrollToSection(projectsRef)}
+            />
+            <SectionButton
+              text={t("academic")}
+              onClick={() => scrollToSection(academicRef)}
+            />
           </VStack>
           <VStack alignItems={"start"} gap={8}>
             <HStack gap={6}>
@@ -96,11 +120,18 @@ export default function HomePage() {
           fontWeight={"normal"}
           alignItems={"start"}
         >
-          {/* About */}
-          <AboutSection />
-          <ExperienceSection />
-          <ProjectsSection />
-          <AcademicSection />
+          <Box ref={aboutRef}>
+            <AboutSection />
+          </Box>
+          <Box ref={expRef}>
+            <ExperienceSection />
+          </Box>
+          <Box ref={projectsRef}>
+            <ProjectsSection />
+          </Box>
+          <Box ref={academicRef}>
+            <AcademicSection />
+          </Box>
         </VStack>
       </HStack>
     </VStack>

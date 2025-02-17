@@ -3,10 +3,12 @@ import React from "react";
 
 interface SectionButtonProps {
   text: string;
+  onClick: () => void;
 }
 
 const SectionButton: React.FC<SectionButtonProps> = ({
   text,
+  onClick,
 }: SectionButtonProps) => {
   return (
     <Text
@@ -21,6 +23,7 @@ const SectionButton: React.FC<SectionButtonProps> = ({
         fontWeight: "semibold",
         transition: "color 0.2s ease-in-out, font-weight 0.2s ease-in-out",
       }}
+      onClick={onClick}
     >
       {text}
     </Text>
