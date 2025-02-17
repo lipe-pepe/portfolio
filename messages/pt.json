@@ -14,13 +14,15 @@
 
   "About": {
     "title": "Sobre mim",
-    "about_0": "Eu sou um desenvolvedor web brasileiro e moro no Rio de Janeiro. Estou finalizando o curso de Engenharia da Computação e Informação na UFRJ ",
-    "ufrj": "(Universidade Federal do Rio de Janeiro)",
-    "about_1": ". Apesar de ter experiência de trabalho com web, também tenho interesse por desenvolvimento mobile e desenvolvimento de games, já explorei um pouco essas áreas. Estou em busca de novos desafios para minha carreira, que possam agregar em conhecimento, experiência e autonomia!  ",
+    "about_0": "Eu sou um desenvolvedor web brasileiro e moro no Rio de Janeiro. Estou finalizando o curso de Engenharia da Computação e Informação na UFRJ (Universidade Federal do Rio de Janeiro).",
+    "about_1": "Apesar de ter experiência de trabalho com web, também tenho interesse por desenvolvimento mobile e desenvolvimento de games, já explorei um pouco essas áreas. Estou em busca de novos desafios para minha carreira, que possam agregar em ",
+    "things": "conhecimento, experiência e autonomia!",
     "about_2": "O que me encanta no trabalho é poder usar a ",
     "creativity": "criatividade",
-    "about_3": " e o conhecimento para construir novos projetos e fazer as coisas acontecerem. Não há nada melhor do que implementar uma nova funcionalidade, ultrapassar seus desafios e ver o usuário final tirando proveito da nossa criação. Essa é minha motivação!",
-    "about_4": "Além disso, sou apaixonado por games e cinema e entusiasta do teatro! Sou ator de teatro registrado e estou desbravando o trabalho de direção também. Acho inspiradora a arte de contar histórias!"
+    "about_3": " e o conhecimento para construir novos projetos e ",
+    "happen": "fazer as coisas acontecerem",
+    "about_4": ". Não há nada melhor do que implementar uma nova funcionalidade, ultrapassar seus desafios e ver o usuário final tirando proveito da nossa criação. Essa é minha motivação!",
+    "about_5": "Além do mundo da tecnologia, sou apaixonado por games e cinema e entusiasta do teatro! Sou ator de teatro e estou desbravando o trabalho de direção também. Acho inspiradora a arte de contar histórias!"
   },
 
   "Experience": {

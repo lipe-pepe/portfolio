@@ -8,15 +8,23 @@ const AboutSection = () => {
     <Section title={t("title")}>
       <Text fontSize={"sm"}>
         {t("about_0")}
-        {t("ufrj")}
         {t("about_1")}
+        <Text as={"span"} fontWeight={"semibold"} color={"white"}>
+          {t("things")}
+        </Text>
       </Text>
       <Text fontSize={"sm"}>
         {t("about_2")}
-        {t("creativity")}
+        <Text as={"span"} fontWeight={"semibold"} color={"white"}>
+          {t("creativity")}
+        </Text>
         {t("about_3")}
+        <Text as={"span"} fontWeight={"semibold"} color={"white"}>
+          {t("happen")}
+        </Text>
+        {t("about_4")}
       </Text>
-      <Text fontSize={"sm"}>{t("about_4")}</Text>
+      <Text fontSize={"sm"}>{t("about_5")}</Text>
     </Section>
   );
 };

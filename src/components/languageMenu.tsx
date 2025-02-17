@@ -1,63 +1,46 @@
 "use client";
 
 import { useRouter } from "@/i18n/routing";
-import {
-  HStack,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Text,
-} from "@chakra-ui/react";
+import { HStack, Text } from "@chakra-ui/react";
 import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import { MdLanguage } from "react-icons/md";
 
 const LanguageMenu = () => {
   const { locale } = useParams();
   const router = useRouter();
 
+  const [selected, setSelected] = useState<string>("pt");
+
+  useEffect(() => {
+    if (locale) setSelected(String(locale));
+  }, [locale]);
+
   const changeLanguage = (locale: string) => {
     router.replace("/", { locale: locale });
   };
 
   return (
-    <Menu>
-      <MenuButton
-        borderRadius={6}
-        borderWidth={1}
-        borderColor={"white.darkest"}
-        color={"white.darkest"}
-        px={2}
-        py={1}
-        _hover={{
-          color: "white",
-          borderWidth: 2,
-          borderColor: "white",
-          transform: "scale(1.05)",
-          transition: "transform 0.2s ease-in-out, color 0.2s ease-in-out",
-        }}
+    <HStack color={"white.darkest"} fontSize={"sm"} letterSpacing={"widest"}>
+      <MdLanguage />
+      <Text
+        color={selected === "pt" ? "white" : "white.darkest"}
+        cursor={selected === "pt" ? "default" : "pointer"}
+        _hover={{ color: selected === "pt" ? "white" : "text" }}
+        onClick={() => changeLanguage("pt")}
       >
-        <HStack>
-          <MdLanguage />
-          <Text
-            letterSpacing={"wide"}
-            fontFamily={"inter"}
-            textTransform={"uppercase"}
-            fontSize={"sm"}
-          >
-            {locale}
-          </Text>
-        </HStack>
-      </MenuButton>
-      <MenuList bg={"background.2"}>
-        <MenuItem bg={"none"} onClick={() => changeLanguage("en")}>
-          EN
-        </MenuItem>
-        <MenuItem bg={"none"} onClick={() => changeLanguage("pt")}>
-          PT
-        </MenuItem>
-      </MenuList>
-    </Menu>
+        PT
+      </Text>
+      <Text cursor={"default"}>|</Text>
+      <Text
+        color={selected === "en" ? "white" : "white.darkest"}
+        cursor={selected === "en" ? "default" : "pointer"}
+        _hover={{ color: selected === "en" ? "white" : "text" }}
+        onClick={() => changeLanguage("en")}
+      >
+        EN
+      </Text>
+    </HStack>
   );
 };
 
