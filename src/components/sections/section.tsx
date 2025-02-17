@@ -7,8 +7,15 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ children, title }) => {
   return (
-    <VStack alignItems={"start"}>
-      <Text>{title}</Text>
+    <VStack alignItems={"start"} gap={12}>
+      <Text
+        textTransform={"uppercase"}
+        letterSpacing={"widest"}
+        fontSize={"xs"}
+        textColor={"white.darkest"}
+      >
+        {title}
+      </Text>
       {children}
     </VStack>
   );

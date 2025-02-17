@@ -1,4 +1,10 @@
-import { HStack, List, ListItem, Text, VStack } from "@chakra-ui/react";
+import {
+  HStack,
+  ListItem,
+  Text,
+  UnorderedList,
+  VStack,
+} from "@chakra-ui/react";
 import React from "react";
 
 interface ExperienceItemProps {
@@ -20,19 +26,19 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
 }: ExperienceItemProps) => {
   return (
     <HStack w={"100%"} alignItems={"start"} gap={8} color={"white.darkest"}>
-      <Text flex={1} textTransform={"uppercase"}>
+      <Text flex={1} textTransform={"uppercase"} fontSize={"sm"}>
         {start} — {end}
       </Text>
-      <VStack flex={3} alignItems={"start"}>
-        <Text fontSize={"lg"} color={"white.dark"}>
+      <VStack flex={3} gap={2} alignItems={"start"}>
+        <Text fontSize={"md"} color={"white"}>
           {name} • {company}
         </Text>
         <Text fontSize={"sm"}>{place}</Text>
-        <List>
+        <UnorderedList fontSize={"sm"} mt={4} spacing={4}>
           {description.map((d, index) => (
             <ListItem key={`exp_item_${name}_${index}`}>{d}</ListItem>
           ))}
-        </List>
+        </UnorderedList>
       </VStack>
     </HStack>
   );

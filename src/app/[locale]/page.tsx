@@ -91,7 +91,7 @@ export default function HomePage() {
         {/* Sections */}
         <VStack
           paddingY={24}
-          gap={40}
+          gap={32}
           flex={2}
           textAlign={"start"}
           fontSize={"md"}
