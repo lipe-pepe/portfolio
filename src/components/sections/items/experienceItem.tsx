@@ -30,7 +30,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
         {start} — {end}
       </Text>
       <VStack flex={3} gap={2} alignItems={"start"}>
-        <Text fontSize={"md"} color={"white"}>
+        <Text fontWeight={"medium"} fontSize={"md"} color={"white"}>
           {name} • {company}
         </Text>
         <Text fontSize={"sm"}>{place}</Text>

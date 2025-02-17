@@ -38,8 +38,11 @@
 
   "Projects": {
     "title": "Projetos",
-    "stiks_desc1": "Um jogo de adivinhação web para ser jogado com os amigos! O jogo é uma adaptação da 'Purrinha', um jogo de boteco brasileiro. É um projeto pessoal que vai receber atualizações constantemente.",
-    "stiks_desc2": "Decidi fazer esse projeto pessoal inteiramente sozinho. Para isso, estudei Websockets, UI Design, UX Design, banco de dados não relacional, entre outros tópicos. Foi um bom desafio que envolveu muita criatividade, dedicação e organização."
+    "stiks_desc1": "Um jogo online de adivinhação para ser jogado com os amigos na web! O jogo é uma adaptação da 'Purrinha', um jogo de boteco brasileiro. É um projeto pessoal que vai receber atualizações constantemente.",
+    "stiks_desc2": "Decidi fazer esse projeto pessoal inteiramente sozinho. Para isso, estudei Websockets, UI Design, UX Design, banco de dados não relacional, entre outros tópicos. Foi um bom desafio que envolveu muita criatividade, dedicação e organização.",
+    "criasound_desc1": "Desenvolvi as landing pages da criasound, um laboratório de música e experiência artística.",
+    "personal_site": "Site pessoal",
+    "personal_site_desc1": "A versão antiga desse site aqui! Fiz esse projeto seguindo guias oficiais do NextJS. Já não está mais no ar, mas o código pode ser encontrado no meu Github. "
   },
 
   "Academic": {

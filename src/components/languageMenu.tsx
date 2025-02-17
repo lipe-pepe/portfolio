@@ -34,8 +34,7 @@ const LanguageMenu = () => {
           borderWidth: 2,
           borderColor: "white",
           transform: "scale(1.05)",
-          transition:
-            "transform 0.2s ease-in-out, background-color 0.2s ease-in-out",
+          transition: "transform 0.2s ease-in-out, color 0.2s ease-in-out",
         }}
       >
         <HStack>
