@@ -1,5 +1,7 @@
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   HStack,
+  Link,
   ListItem,
   Text,
   UnorderedList,
@@ -12,6 +14,7 @@ interface ExperienceItemProps {
   start: string;
   end: string;
   company: string;
+  companyLink: string;
   place: string;
   description: string[];
 }
@@ -21,6 +24,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   start,
   end,
   company,
+  companyLink,
   place,
   description,
 }: ExperienceItemProps) => {
@@ -30,9 +34,20 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
         {start} — {end}
       </Text>
       <VStack flex={3} gap={2} alignItems={"start"}>
-        <Text fontWeight={"medium"} fontSize={"md"} color={"white"}>
-          {name} • {company}
-        </Text>
+        <HStack fontWeight={"medium"} fontSize={"md"}>
+          <Text color={"white"}>{name} •</Text>
+          <Link
+            href={companyLink}
+            isExternal
+            _hover={{ color: "text", textDecoration: "underline" }}
+          >
+            <HStack>
+              <Text fontSize={"md"}>{company}</Text>
+              <ExternalLinkIcon />
+            </HStack>
+          </Link>
+        </HStack>
+
         <Text fontSize={"sm"}>{place}</Text>
         <UnorderedList fontSize={"sm"} mt={4} spacing={4}>
           {description.map((d, index) => (

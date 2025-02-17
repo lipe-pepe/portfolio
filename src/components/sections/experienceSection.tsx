@@ -12,6 +12,7 @@ const ExperienceSection = () => {
         end="2025"
         place={t("sp")}
         company="Exame Corporate Education"
+        companyLink="https://corporate.exame.com/"
         description={[t("2_desc1"), t("2_desc2"), t("2_desc3")]}
       />
       <ExperienceItem
@@ -20,6 +21,7 @@ const ExperienceSection = () => {
         end="2024"
         place={t("rj")}
         company="Witseed"
+        companyLink="https://play.witseed.com"
         description={[t("1_desc1")]}
       />
     </Section>
