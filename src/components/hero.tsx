@@ -16,10 +16,18 @@ const Hero = () => {
       justifyContent={"center"}
     >
       <VStack width={"100%"} gap={[8, 12]}>
-        <Text fontSize={["xl", "2xl"]} fontWeight={"bold"} color={"white.base"}>
+        <Text
+          fontSize={["xl", "xl", "2xl"]}
+          fontWeight={"bold"}
+          color={"white.base"}
+        >
           {t("heading")}
         </Text>
-        <Text fontWeight="normal" fontSize={["md", "lg"]} color="white.darkest">
+        <Text
+          fontWeight="normal"
+          fontSize={["md", "md", "lg"]}
+          color="white.darkest"
+        >
           {t("intro")}
           <Text as="span" color="white" fontWeight="bold">
             {t("dev")}
@@ -28,17 +36,17 @@ const Hero = () => {
         </Text>
         <HStack width={"75%"} justifyContent={"space-evenly"}>
           <SocialMediaIcon
-            size={["24px", "32px"]}
+            size={["24px", "24px", "32px"]}
             icon={<FaLinkedin size={"100%"} />}
             link="https://www.linkedin.com/in/felipe-pepe/"
           />
           <SocialMediaIcon
-            size={["24px", "32px"]}
+            size={["24px", "24px", "32px"]}
             icon={<FaGithub size={"100%"} />}
             link="https://github.com/lipe-pepe"
           />
           <SocialMediaIcon
-            size={["24px", "32px"]}
+            size={["24px", "24px", "32px"]}
             icon={<MdEmail size={"100%"} />}
             link="mailto:felipepepe21@gmail.com"
           />

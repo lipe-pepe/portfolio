@@ -10,7 +10,10 @@
   "experience": "Experiência",
   "projects": "Projetos",
   "academic": "Formação Acadêmica",
-  "location": "Rio de Janeiro, Brasil",
+
+  "Contact": {
+    "location": "Rio de Janeiro, Brazil"
+  },
 
   "About": {
     "title": "Sobre mim",

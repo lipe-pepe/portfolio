@@ -3,20 +3,18 @@
 import AcademicSection from "@/components/sections/academicSection";
 import Hero from "@/components/hero";
 import SectionButton from "@/components/sectionButton";
-import SocialMediaIcon from "@/components/socialMediaIcon";
-import { Box, Center, HStack, Text, VStack } from "@chakra-ui/react";
+import { Box, Center, HStack, VStack } from "@chakra-ui/react";
 import { useTranslations } from "next-intl";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail, MdPlace } from "react-icons/md";
 import ExperienceSection from "@/components/sections/experienceSection";
 import ProjectsSection from "@/components/sections/projectsSection";
 import AboutSection from "@/components/sections/aboutSection";
 import React, { useRef } from "react";
+import ContactInfo from "@/components/contactInfo";
 
 export default function HomePage() {
   const t = useTranslations();
 
-  const paddingX = ["1rem", "24rem"];
+  const paddingX = ["1rem", "4rem", "24rem"];
 
   const aboutRef = useRef<HTMLDivElement>(null!); // Força que não será null
   const expRef = useRef<HTMLDivElement>(null!);
@@ -42,7 +40,7 @@ export default function HomePage() {
       <Center
         scrollSnapAlign="start" // Define o ponto de snap
       >
-        <Box h={"100vh"} w={["100%", "50%"]}>
+        <Box h={"100vh"} w={["100%", "80%", "50%"]}>
           <Hero />
         </Box>
       </Center>
@@ -57,6 +55,7 @@ export default function HomePage() {
       >
         {/* Indexes */}
         <VStack
+          display={["none", "none", "flex"]}
           paddingY={24}
           h={"100vh"}
           flex={1}
@@ -83,32 +82,7 @@ export default function HomePage() {
               onClick={() => scrollToSection(academicRef)}
             />
           </VStack>
-          <VStack alignItems={"start"} gap={8}>
-            <HStack gap={6}>
-              <SocialMediaIcon
-                size="24px"
-                icon={<FaLinkedin size={"100%"} />}
-                link="https://www.linkedin.com/in/felipe-pepe/"
-              />
-              <SocialMediaIcon
-                size="24px"
-                icon={<FaGithub size={"100%"} />}
-                link="https://github.com/lipe-pepe"
-              />
-            </HStack>
-            <HStack>
-              <SocialMediaIcon
-                size="24px"
-                icon={<MdEmail size={"100%"} />}
-                link="mailto:felipepepe21@gmail.com"
-              />
-              <Text>felipepepe21@gmail.com</Text>
-            </HStack>
-            <HStack>
-              <MdPlace />
-              <Text>{t("location")}</Text>
-            </HStack>
-          </VStack>
+          <ContactInfo />
         </VStack>
         {/* Sections */}
         <VStack
@@ -131,6 +105,9 @@ export default function HomePage() {
           </Box>
           <Box ref={academicRef}>
             <AcademicSection />
+          </Box>
+          <Box>
+            <ContactInfo />
           </Box>
         </VStack>
       </HStack>

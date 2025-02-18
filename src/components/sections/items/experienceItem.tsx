@@ -30,18 +30,18 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
 }: ExperienceItemProps) => {
   return (
     <HStack w={"100%"} alignItems={"start"} gap={8} color={"white.darkest"}>
-      <Text flex={1} textTransform={"uppercase"} fontSize={"sm"}>
+      <Text flex={1} textTransform={"uppercase"} fontSize={["xs", "sm"]}>
         {start} — {end}
       </Text>
       <VStack flex={3} gap={2} alignItems={"start"}>
-        <HStack fontWeight={"medium"} fontSize={"md"}>
+        <HStack wrap={"wrap"} fontWeight={"medium"} fontSize={"md"}>
           <Text color={"white"}>{name} •</Text>
           <Link
             href={companyLink}
             isExternal
             _hover={{ color: "text", textDecoration: "underline" }}
           >
-            <HStack>
+            <HStack wrap={"wrap"}>
               <Text fontSize={"md"}>{company}</Text>
               <ExternalLinkIcon />
             </HStack>
