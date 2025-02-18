@@ -19,9 +19,9 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = params; // Aguarde `params` antes de acessar `locale`
+  const { locale } = await params; // Aguarde `params` antes de acessar `locale`
 
   // Ensure that the incoming `locale` is valid
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
