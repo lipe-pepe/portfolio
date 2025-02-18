@@ -17,6 +17,7 @@ const LanguageMenu = () => {
   }, [locale]);
 
   const changeLanguage = (locale: string) => {
+    setSelected(locale);
     router.replace("/", { locale: locale });
   };
 

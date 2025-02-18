@@ -32,7 +32,7 @@ export default function HomePage() {
       px={paddingX}
       textAlign={"center"}
       overflowY="scroll"
-      height="100vh"
+      height="100dvh"
       scrollSnapType="y mandatory" // Ativa o scroll snap no eixo Y
       scrollBehavior={"smooth"}
     >

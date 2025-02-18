@@ -14,7 +14,7 @@ const ProjectsSection = () => {
         image={"stiks.png"}
         name={"Stiks!"}
         description={[t("stiks_desc1"), t("stiks_desc2")]}
-        link="https://stiks.com"
+        link="https://stiks-frontend-production.up.railway.app"
         github="https://github.com/lipe-pepe/stiks-backend"
       >
         <JavascriptIcon /> <NodeIcon /> <NextIcon /> <MongoIcon />
