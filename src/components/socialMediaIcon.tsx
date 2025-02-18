@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 interface SocialMediaIconProps {
-  size: string;
+  size: string[] | string;
   icon: ReactNode;
   link: string;
 }

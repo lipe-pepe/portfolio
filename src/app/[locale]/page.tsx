@@ -42,7 +42,7 @@ export default function HomePage() {
       <Center
         scrollSnapAlign="start" // Define o ponto de snap
       >
-        <Box h={"100vh"} w={"50%"}>
+        <Box h={"100vh"} w={["100%", "50%"]}>
           <Hero />
         </Box>
       </Center>
