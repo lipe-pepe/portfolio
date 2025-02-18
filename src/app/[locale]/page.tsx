@@ -16,7 +16,7 @@ import React, { useRef } from "react";
 export default function HomePage() {
   const t = useTranslations();
 
-  const paddingX = ["24rem"];
+  const paddingX = ["1rem", "24rem"];
 
   const aboutRef = useRef<HTMLDivElement>(null!); // Força que não será null
   const expRef = useRef<HTMLDivElement>(null!);

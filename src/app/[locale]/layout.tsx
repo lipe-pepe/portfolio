@@ -7,6 +7,13 @@ import { fonts } from "../fonts";
 import { Box } from "@chakra-ui/react";
 import LanguageMenu from "@/components/languageMenu";
 
+export const metadata = {
+  title: "Felipe Pêpe",
+  icons: {
+    icon: "/favicon.png", // Caminho do favicon dentro da pasta public/
+  },
+};
+
 export default async function LocaleLayout({
   children,
   params,
@@ -26,7 +33,7 @@ export default async function LocaleLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
 
-  const paddingX = ["24rem"];
+  const paddingX = ["1rem", "24rem"];
 
   return (
     <html lang={locale} className={fonts.inter.variable}>
