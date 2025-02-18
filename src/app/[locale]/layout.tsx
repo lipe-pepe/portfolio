@@ -33,7 +33,7 @@ export default async function LocaleLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
 
-  const paddingX = ["1rem", "4rem", "24rem"];
+  const paddingX = ["1rem", "4rem", "8rem", "12rem", "18rem", "24rem"];
 
   return (
     <html lang={locale} className={fonts.inter.variable}>

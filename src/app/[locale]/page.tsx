@@ -14,7 +14,7 @@ import ContactInfo from "@/components/contactInfo";
 export default function HomePage() {
   const t = useTranslations();
 
-  const paddingX = ["1rem", "4rem", "24rem"];
+  const paddingX = ["1rem", "4rem", "8rem", "12rem", "18rem", "24rem"];
 
   const aboutRef = useRef<HTMLDivElement>(null!); // Força que não será null
   const expRef = useRef<HTMLDivElement>(null!);
@@ -106,7 +106,7 @@ export default function HomePage() {
           <Box ref={academicRef}>
             <AcademicSection />
           </Box>
-          <Box>
+          <Box display={["block", "block", "none"]}>
             <ContactInfo />
           </Box>
         </VStack>
