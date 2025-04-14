@@ -5,11 +5,22 @@ import NextIcon from "../techIcons/nextjs";
 import JavascriptIcon from "../techIcons/javascript";
 import NodeIcon from "../techIcons/node";
 import MongoIcon from "../techIcons/mongo";
+import TailwindIcon from "../techIcons/tailwind";
 
 const ProjectsSection = () => {
   const t = useTranslations("Projects");
   return (
     <Section title={t("title")}>
+      <ProjectItem
+        image={"server-components.png"}
+        name={"Server Components"}
+        description={[t("sc_desc1"), t("sc_desc2")]}
+        link="https://nextjs-server-components-wine.vercel.app/"
+        github="https://github.com/lipe-pepe/nextjs-server-components"
+      >
+        <NextIcon />
+        <TailwindIcon />
+      </ProjectItem>
       <ProjectItem
         image={"stiks.png"}
         name={"Stiks!"}
@@ -35,6 +46,7 @@ const ProjectsSection = () => {
       >
         <JavascriptIcon />
         <NextIcon />
+        <TailwindIcon />
       </ProjectItem>
     </Section>
   );

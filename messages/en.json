@@ -42,6 +42,8 @@
 
   "Projects": {
     "title": "Projects",
+    "sc_desc1": "A site developed during a study about Server Components of React and it's functioning in Next.js. The project includes pratical examples of Server and Client Components.",
+    "sc_desc2": "For now, the project is fully in portuguese.",
     "stiks_desc1": "An online guessing game to play with friends on the web! The game is an adaptation of 'Purrinha,' a Brazilian pub game. This is a personal project that will receive constant updates.",
     "stiks_desc2": "I decided to develop this project entirely by myself. To do so, I studied WebSockets, UI Design, UX Design, non-relational databases, among other topics. It was a great challenge that required a lot of creativity, dedication, and organization.",
     "criasound_desc1": "I developed the landing pages for criasound, a music and artistic experience laboratory.",

@@ -42,6 +42,8 @@
 
   "Projects": {
     "title": "Projetos",
+    "sc_desc1": "Um site criado durante um estudo sobre a feature de Server Components do React e seu funcionamento no Next.js. O projeto inclui exemplos práticos do funcionamento de Server e Client Components.",
+    "sc_desc2": "Por enquanto, o projeto está somente em português.",
     "stiks_desc1": "Um jogo online de adivinhação para ser jogado com os amigos na web! O jogo é uma adaptação da 'Purrinha', um jogo de boteco brasileiro. É um projeto pessoal que vai receber atualizações constantemente.",
     "stiks_desc2": "Decidi fazer esse projeto inteiramente sozinho. Para isso, estudei Websockets, UI Design, UX Design, banco de dados não relacional, entre outros tópicos. Foi um bom desafio que envolveu muita criatividade, dedicação e organização.",
     "criasound_desc1": "Desenvolvi as landing pages da criasound, um laboratório de música e experiência artística.",
