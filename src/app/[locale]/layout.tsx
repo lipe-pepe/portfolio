@@ -7,6 +7,8 @@ import { fonts } from "../fonts";
 import { Box } from "@chakra-ui/react";
 import LanguageMenu from "@/components/languageMenu";
 
+import "../globals.css";
+
 export const metadata = {
   title: "Felipe Pêpe",
   icons: {
