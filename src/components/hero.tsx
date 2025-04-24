@@ -1,4 +1,4 @@
-import { Center, HStack, Text, VStack } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import SocialMediaIcon from "./socialMediaIcon";
@@ -8,14 +8,8 @@ import ScrollIndicator from "./scrollIndicator";
 const Hero = () => {
   const t = useTranslations("Hero");
   return (
-    <VStack
-      position={"relative"}
-      height={"100%"}
-      width={"100%"}
-      gap={12}
-      justifyContent={"center"}
-    >
-      <VStack width={"100%"} gap={[8, 12]}>
+    <div className="flex flex-col items-center relative h-full w-full gap-12 justify-center">
+      <div className="flex flex-col items-center justify-center w-full sm:gap-8 md:gap-12">
         <Text
           fontSize={["xl", "xl", "2xl"]}
           fontWeight={"bold"}
@@ -34,7 +28,7 @@ const Hero = () => {
           </Text>
           {t("intro_2")}
         </Text>
-        <HStack width={"75%"} justifyContent={"space-evenly"}>
+        <div className="flex justify-evenly items-center w-3/4">
           <SocialMediaIcon
             size={["24px", "24px", "32px"]}
             icon={<FaLinkedin size={"100%"} />}
@@ -50,12 +44,12 @@ const Hero = () => {
             icon={<MdEmail size={"100%"} />}
             link="mailto:felipepepe21@gmail.com"
           />
-        </HStack>
-      </VStack>
-      <Center position={"absolute"} bottom={12}>
+        </div>
+      </div>
+      <div className="flex justify-center items-center absolute bottom-12">
         <ScrollIndicator />
-      </Center>
-    </VStack>
+      </div>
+    </div>
   );
 };
 
