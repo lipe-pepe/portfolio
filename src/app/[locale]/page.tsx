@@ -59,17 +59,17 @@ export default function HomePage() {
           <ContactInfo />
         </div>
         {/* Sections */}
-        <div className="py-24 gap-32 flex-2 text-start text-md font-normal items-start">
-          <div ref={aboutRef}>
+        <div className="flex flex-col justify-center py-24 gap-32 flex-2 text-start text-md font-normal items-start">
+          <div className="flex" ref={aboutRef}>
             <AboutSection />
           </div>
-          <div ref={expRef}>
+          <div className="flex" ref={expRef}>
             <ExperienceSection />
           </div>
-          <div ref={projectsRef}>
+          <div className="flex" ref={projectsRef}>
             <ProjectsSection />
           </div>
-          <div ref={academicRef}>
+          <div className="flex" ref={academicRef}>
             <AcademicSection />
           </div>
           <div className="block md:hidden">

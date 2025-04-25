@@ -1,5 +1,5 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Flex, HStack, Image, Link, Text, VStack } from "@chakra-ui/react";
+import { Image, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 
@@ -21,8 +21,8 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   children,
 }: ProjectItemProps) => {
   return (
-    <HStack w={"100%"} alignItems={"start"} gap={8}>
-      <Flex flex={1}>
+    <div className="flex items-start w-full gap-8">
+      <div className="flex flex-1">
         <Image
           w={"100%"}
           objectFit="cover"
@@ -30,10 +30,10 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
           src={`/images/${image}`}
           alt={`${name} example image`}
         />
-      </Flex>
+      </div>
 
-      <VStack flex={3} alignItems={"start"}>
-        <HStack justifyContent={"space-between"} width={"100%"}>
+      <div className="flex flex-col justify-center items-start flex-3 gap-2">
+        <div className="flex items-center gap-2 justify-between w-full">
           {link ? (
             <Link
               href={link}
@@ -45,12 +45,10 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
                   "transform 0.2s ease-in-out, color 0.2s ease-in-out",
               }}
             >
-              <HStack>
-                <Text fontWeight={"medium"} color={"white"} fontSize={"md"}>
-                  {name}
-                </Text>
+              <div className="flex items-center gap-2">
+                <p className="font-medium text-white text-md">{name}</p>
                 {link && <ExternalLinkIcon />}
-              </HStack>
+              </div>
             </Link>
           ) : (
             <Text fontWeight={"medium"} color={"white"} fontSize={"md"}>
@@ -68,16 +66,16 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
               <FaGithub size={"24px"} />
             </Link>
           )}
-        </HStack>
+        </div>
 
         {description.map((d, index) => (
-          <Text my={2} key={`project_item_${name}_${index}`} fontSize={"sm"}>
-            {d}
-          </Text>
+          <div key={`project_item_${name}_${index}`} className="my-2">
+            <p className="text-sm">{d}</p>
+          </div>
         ))}
-        <HStack gap={4}>{children}</HStack>
-      </VStack>
-    </HStack>
+        <div className="flex items-center gap-4">{children}</div>
+      </div>
+    </div>
   );
 };
 
