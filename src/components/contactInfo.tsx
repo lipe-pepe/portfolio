@@ -1,4 +1,3 @@
-import { Text } from "@chakra-ui/react";
 import SocialMediaIcon from "./socialMediaIcon";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail, MdPlace } from "react-icons/md";
@@ -27,11 +26,11 @@ const ContactInfo = () => {
           icon={<MdEmail size={"100%"} />}
           link="mailto:felipepepe21@gmail.com"
         />
-        <Text>felipepepe21@gmail.com</Text>
+        <p>felipepepe21@gmail.com</p>
       </div>
       <div className="flex justify-center items-center gap-2">
         <MdPlace />
-        <Text>{t("location")}</Text>
+        <p>{t("location")}</p>
       </div>
     </div>
   );

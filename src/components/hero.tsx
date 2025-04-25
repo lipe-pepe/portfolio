@@ -1,4 +1,3 @@
-import { Text } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import SocialMediaIcon from "./socialMediaIcon";
@@ -10,24 +9,14 @@ const Hero = () => {
   return (
     <div className="flex flex-col items-center relative h-full w-full gap-12 justify-center">
       <div className="flex flex-col items-center justify-center w-full sm:gap-8 md:gap-12">
-        <Text
-          fontSize={["xl", "xl", "2xl"]}
-          fontWeight={"bold"}
-          color={"white.base"}
-        >
+        <p className="text-3xl sm:text-3xl md:text-4xl  font-bold text-white">
           {t("heading")}
-        </Text>
-        <Text
-          fontWeight="normal"
-          fontSize={["md", "md", "lg"]}
-          color="white.darkest"
-        >
+        </p>
+        <p className="text-md md:text-lg text-white-darkest">
           {t("intro")}
-          <Text as="span" color="white" fontWeight="bold">
-            {t("dev")}
-          </Text>
+          <span className="text-white font-bold">{t("dev")}</span>
           {t("intro_2")}
-        </Text>
+        </p>
         <div className="flex justify-evenly items-center w-3/4">
           <SocialMediaIcon
             size={["24px", "24px", "32px"]}
