@@ -19,17 +19,17 @@ const Hero = () => {
         </p>
         <div className="flex justify-evenly items-center w-3/4">
           <SocialMediaIcon
-            size={["24px", "24px", "32px"]}
+            size="md"
             icon={<FaLinkedin size={"100%"} />}
             link="https://www.linkedin.com/in/felipe-pepe/"
           />
           <SocialMediaIcon
-            size={["24px", "24px", "32px"]}
+            size="md"
             icon={<FaGithub size={"100%"} />}
             link="https://github.com/lipe-pepe"
           />
           <SocialMediaIcon
-            size={["24px", "24px", "32px"]}
+            size="md"
             icon={<MdEmail size={"100%"} />}
             link="mailto:felipepepe21@gmail.com"
           />

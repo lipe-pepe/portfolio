@@ -27,7 +27,7 @@ const AcademicItem: React.FC<AcademicItemProps> = ({
           </p>
           {type && <p>• {type}</p>}
         </div>
-        <p className="text-sm">{place}</p>
+        <p className="text-sm pt-3">{place}</p>
       </div>
     </div>
   );

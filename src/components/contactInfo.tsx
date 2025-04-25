@@ -10,19 +10,19 @@ const ContactInfo = () => {
     <div className="flex flex-col items-start gap-8">
       <div className="flex justify-center gap-6">
         <SocialMediaIcon
-          size="24px"
+          size="sm"
           icon={<FaLinkedin size={"100%"} />}
           link="https://www.linkedin.com/in/felipe-pepe/"
         />
         <SocialMediaIcon
-          size="24px"
+          size="sm"
           icon={<FaGithub size={"100%"} />}
           link="https://github.com/lipe-pepe"
         />
       </div>
       <div className="flex justify-center items-center gap-2">
         <SocialMediaIcon
-          size="24px"
+          size="sm"
           icon={<MdEmail size={"100%"} />}
           link="mailto:felipepepe21@gmail.com"
         />

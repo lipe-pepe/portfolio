@@ -1,7 +1,6 @@
 "use client";
 
 import { useRouter } from "@/i18n/routing";
-import { HStack, Text } from "@chakra-ui/react";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { MdLanguage } from "react-icons/md";
@@ -22,26 +21,32 @@ const LanguageMenu = () => {
   };
 
   return (
-    <HStack color={"white.darkest"} fontSize={"sm"} letterSpacing={"widest"}>
+    <div className="flex items-center justify-center gap-2 tracking-widest text-white-darkest text-sm">
       <MdLanguage />
-      <Text
-        color={selected === "pt" ? "white" : "white.darkest"}
-        cursor={selected === "pt" ? "default" : "pointer"}
-        _hover={{ color: selected === "pt" ? "white" : "text" }}
-        onClick={() => changeLanguage("pt")}
-      >
-        PT
-      </Text>
-      <Text cursor={"default"}>|</Text>
-      <Text
-        color={selected === "en" ? "white" : "white.darkest"}
-        cursor={selected === "en" ? "default" : "pointer"}
-        _hover={{ color: selected === "en" ? "white" : "text" }}
-        onClick={() => changeLanguage("en")}
-      >
-        EN
-      </Text>
-    </HStack>
+      <button onClick={() => changeLanguage("pt")} disabled={selected === "pt"}>
+        <p
+          className={`transition-colors ${
+            selected === "pt"
+              ? "text-white cursor-default"
+              : "text-white/80 hover:text-highlight cursor-pointer"
+          }`}
+        >
+          PT
+        </p>
+      </button>
+      <p>|</p>
+      <button onClick={() => changeLanguage("en")} disabled={selected === "en"}>
+        <p
+          className={`transition-colors ${
+            selected === "en"
+              ? "text-white cursor-default"
+              : "text-white/80 hover:text-highlight cursor-pointer"
+          }`}
+        >
+          EN
+        </p>
+      </button>
+    </div>
   );
 };
 
