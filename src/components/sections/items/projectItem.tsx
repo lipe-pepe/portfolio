@@ -1,7 +1,7 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Image, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
 interface ProjectItemProps {
   image: string;
@@ -47,7 +47,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
             >
               <div className="flex items-center gap-2">
                 <p className="font-medium text-white text-md">{name}</p>
-                {link && <ExternalLinkIcon />}
+                {link && <FiExternalLink />}
               </div>
             </Link>
           ) : (

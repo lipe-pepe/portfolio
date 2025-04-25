@@ -1,5 +1,5 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Link, ListItem, UnorderedList } from "@chakra-ui/react";
+import { FiExternalLink } from "react-icons/fi";
 import React from "react";
 
 interface ExperienceItemProps {
@@ -36,7 +36,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
           >
             <div className="flex gap-2 items-center flex-wrap">
               <p className="text-md">{company}</p>
-              <ExternalLinkIcon />
+              <FiExternalLink />
             </div>
           </Link>
         </div>
