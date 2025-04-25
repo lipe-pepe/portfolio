@@ -3,8 +3,9 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Providers } from "../providers";
-import { fonts } from "../fonts";
-import { Box } from "@chakra-ui/react";
+
+import { Inter } from "next/font/google";
+
 import LanguageMenu from "@/components/languageMenu";
 
 import "../globals.css";
@@ -15,6 +16,11 @@ export const metadata = {
     icon: "/favicon.png", // Caminho do favicon dentro da pasta public/
   },
 };
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default async function LocaleLayout({
   children,
@@ -35,24 +41,17 @@ export default async function LocaleLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
 
-  const paddingX = ["1rem", "4rem", "8rem", "12rem", "18rem", "24rem"];
-
   return (
-    <html lang={locale} className={fonts.inter.variable}>
+    <html lang={locale} className={inter.className}>
       <body>
         <NextIntlClientProvider messages={messages}>
           <Providers>
-            <Box
-              fontFamily={"inter"}
-              minH={"100vh"}
-              bgAttachment={"fixed"}
-              bgGradient={"linear(to-r, background.1, background.2)"}
-            >
-              <Box position={"fixed"} top={6} right={0} mr={paddingX}>
+            <div className="min-h-screen bg-fixed bg-gradient-to-r from-[var(--background-1)] to-[var(--background-2)]">
+              <div className="fixed top-6 right-0 mr-[1rem] sm:mr-[4rem] md:mr-[8rem] lg:mr-[12rem] xl:mr-[18rem] 2xl:mr-[24rem]">
                 <LanguageMenu />
-              </Box>
+              </div>
               {children}
-            </Box>
+            </div>
           </Providers>
         </NextIntlClientProvider>
       </body>
