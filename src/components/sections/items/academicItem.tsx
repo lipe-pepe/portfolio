@@ -1,4 +1,3 @@
-import { HStack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 
 interface AcademicItemProps {
@@ -17,21 +16,20 @@ const AcademicItem: React.FC<AcademicItemProps> = ({
   end,
 }: AcademicItemProps) => {
   return (
-    <HStack w={"100%"} alignItems={"start"} gap={8} color={"white.darkest"}>
-      <Text flex={1} fontSize={"sm"}>
+    <div className="flex items-start w-full gap-8 text-white-darkest">
+      <p className="flex-1 text-sm">
         {start} — {end}
-      </Text>
-      <VStack flex={3} alignItems={"start"} fontSize={"md"}>
-        <HStack>
-          <Text color={"white"} fontWeight={"medium"}>
+      </p>
+      <div className="flex flex-col justify-center flex-3 items-start text-md">
+        <div className="flex items-center gap-1">
+          <p className="text-white font-medium" color={"white"}>
             {name}
-          </Text>
-          {type && <Text>• {type}</Text>}
-        </HStack>
-
-        <Text fontSize={"sm"}>{place}</Text>
-      </VStack>
-    </HStack>
+          </p>
+          {type && <p>• {type}</p>}
+        </div>
+        <p className="text-sm pt-3">{place}</p>
+      </div>
+    </div>
   );
 };
 

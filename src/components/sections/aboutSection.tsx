@@ -1,30 +1,26 @@
 import { useTranslations } from "next-intl";
 import Section from "./section";
-import { Text } from "@chakra-ui/react";
 
 const AboutSection = () => {
   const t = useTranslations("About");
   return (
     <Section title={t("title")}>
-      <Text fontSize={"sm"}>
+      <p className="text-sm">
         {t("about_0")}
         {t("about_1")}
-        <Text as={"span"} fontWeight={"semibold"} color={"white"}>
-          {t("things")}
-        </Text>
-      </Text>
-      <Text fontSize={"sm"}>
+        <span className="font-semibold text-white">{t("things")}</span>
+      </p>
+      <p className="text-sm">
         {t("about_2")}
-        <Text as={"span"} fontWeight={"semibold"} color={"white"}>
-          {t("creativity")}
-        </Text>
+        <span className="font-semibold text-white">{t("creativity")}</span>
+
         {t("about_3")}
-        <Text as={"span"} fontWeight={"semibold"} color={"white"}>
-          {t("happen")}
-        </Text>
+
+        <span className="font-semibold text-white">{t("happen")}</span>
+
         {t("about_4")}
-      </Text>
-      <Text fontSize={"sm"}>{t("about_5")}</Text>
+      </p>
+      <p className="text-sm">{t("about_5")}</p>
     </Section>
   );
 };

@@ -1,25 +1,23 @@
 "use client";
 
-import { Box } from "@chakra-ui/react";
-import { keyframes } from "@emotion/react";
 import { motion } from "framer-motion";
-import { ChevronDownIcon } from "@chakra-ui/icons";
-
-// Animação para a setinha (pulsar para baixo)
-const bounceAnimation = keyframes`
-  0% { transform: translateY(0); opacity: 0.8; }
-  50% { transform: translateY(10px); opacity: 1; }
-  100% { transform: translateY(0); opacity: 0.8; }
-`;
+import { FaChevronDown } from "react-icons/fa";
 
 const ScrollIndicator = () => {
   return (
-    <Box
-      as={motion.div} // Chakra + Framer Motion
-      animation={`${bounceAnimation} 1.5s infinite`} // Aplica animação
+    <motion.div
+      className="flex justify-center items-center text-white"
+      animate={{
+        y: [0, 10, 0],
+        opacity: [0.8, 1, 0.8],
+      }}
+      transition={{
+        duration: 1.5,
+        repeat: Infinity,
+      }}
     >
-      <ChevronDownIcon boxSize={16} color="white" />
-    </Box>
+      <FaChevronDown size={32} />
+    </motion.div>
   );
 };
 

@@ -1,4 +1,3 @@
-import { Text } from "@chakra-ui/react";
 import React from "react";
 
 interface SectionButtonProps {
@@ -11,22 +10,11 @@ const SectionButton: React.FC<SectionButtonProps> = ({
   onClick,
 }: SectionButtonProps) => {
   return (
-    <Text
-      color={"white.dark"}
-      cursor={"pointer"}
-      fontSize={"sm"}
-      fontWeight={"normal"}
-      textTransform={"uppercase"}
-      letterSpacing={"widest"}
-      _hover={{
-        color: "text",
-        fontWeight: "semibold",
-        transition: "color 0.2s ease-in-out, font-weight 0.2s ease-in-out",
-      }}
-      onClick={onClick}
-    >
-      {text}
-    </Text>
+    <button onClick={onClick}>
+      <p className="text-white-dark text-sm uppercase font-normal tracking-widest transition-colors duration-200 ease-in-out hover:text-highlight hover:font-semibold">
+        {text}
+      </p>
+    </button>
   );
 };
 

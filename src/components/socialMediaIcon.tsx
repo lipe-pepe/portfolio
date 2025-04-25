@@ -1,8 +1,7 @@
-import { Box } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 interface SocialMediaIconProps {
-  size: string[] | string;
+  size: "sm" | "md";
   icon: ReactNode;
   link: string;
 }
@@ -13,21 +12,14 @@ const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({
   link,
 }: SocialMediaIconProps) => {
   return (
-    <Box
-      cursor={"pointer"}
-      boxSize={size}
-      color={"white.darkest"}
-      _hover={{
-        color: "white.base",
-        transform: "scale(1.05)",
-        transition:
-          "transform 0.2s ease-in-out, background-color 0.2s ease-in-out",
-      }}
+    <div
+      className={`cursor-pointer text-white/70 hover:text-white transition-transform duration-200 hover:scale-105`}
+      style={{ width: size === "sm" ? "24px" : "32px" }}
     >
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" rel="noopener noreferrer">
         {icon}
       </a>
-    </Box>
+    </div>
   );
 };
 

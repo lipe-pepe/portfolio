@@ -1,13 +1,6 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import {
-  HStack,
-  Link,
-  ListItem,
-  Text,
-  UnorderedList,
-  VStack,
-} from "@chakra-ui/react";
+import { FiExternalLink } from "react-icons/fi";
 import React from "react";
+import Link from "next/link";
 
 interface ExperienceItemProps {
   name: string;
@@ -29,33 +22,29 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   description,
 }: ExperienceItemProps) => {
   return (
-    <HStack w={"100%"} alignItems={"start"} gap={8} color={"white.darkest"}>
-      <Text flex={1} textTransform={"uppercase"} fontSize={["xs", "sm"]}>
+    <div className="flex justify-center items-start w-full gap-8 text-white-darkest">
+      <p className="uppercase flex-1 text-xs sm:text-sm">
         {start} — {end}
-      </Text>
-      <VStack flex={3} gap={2} alignItems={"start"}>
-        <HStack wrap={"wrap"} fontWeight={"medium"} fontSize={"md"}>
-          <Text color={"white"}>{name} •</Text>
-          <Link
-            href={companyLink}
-            isExternal
-            _hover={{ color: "text", textDecoration: "underline" }}
-          >
-            <HStack wrap={"wrap"}>
-              <Text fontSize={"md"}>{company}</Text>
-              <ExternalLinkIcon />
-            </HStack>
+      </p>
+      <div className="flex flex-col items-start flex-3 gap-2">
+        <div className="flex gap-2 items-center font-medium text-md flex-wrap">
+          <p className="text-white">{name} •</p>
+          <Link href={companyLink} target="_blank">
+            <div className="flex gap-2 items-center flex-wrap hover:text-highlight hover:underline">
+              <p className="text-md">{company}</p>
+              <FiExternalLink />
+            </div>
           </Link>
-        </HStack>
+        </div>
 
-        <Text fontSize={"sm"}>{place}</Text>
-        <UnorderedList fontSize={"sm"} mt={4} spacing={4}>
+        <p className="text-sm">{place}</p>
+        <ul className="text-sm mt-4 space-y-4 list-disc list-inside">
           {description.map((d, index) => (
-            <ListItem key={`exp_item_${name}_${index}`}>{d}</ListItem>
+            <li key={`exp_item_${name}_${index}`}>{d}</li>
           ))}
-        </UnorderedList>
-      </VStack>
-    </HStack>
+        </ul>
+      </div>
+    </div>
   );
 };
 

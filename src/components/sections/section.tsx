@@ -1,5 +1,3 @@
-import { Text, VStack } from "@chakra-ui/react";
-
 interface SectionProps {
   children: React.ReactNode;
   title: string;
@@ -7,17 +5,12 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ children, title }) => {
   return (
-    <VStack alignItems={"start"} gap={12}>
-      <Text
-        textTransform={"uppercase"}
-        letterSpacing={"widest"}
-        fontSize={"xs"}
-        textColor={"white.darkest"}
-      >
+    <div className="flex flex-col items-start gap-12">
+      <p className="text-xs text-white-darkest tracking-widest uppercase">
         {title}
-      </Text>
+      </p>
       {children}
-    </VStack>
+    </div>
   );
 };
 

@@ -1,4 +1,3 @@
-import { HStack, Text, VStack } from "@chakra-ui/react";
 import SocialMediaIcon from "./socialMediaIcon";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail, MdPlace } from "react-icons/md";
@@ -8,32 +7,32 @@ const ContactInfo = () => {
   const t = useTranslations("Contact");
 
   return (
-    <VStack alignItems={"start"} gap={8}>
-      <HStack gap={6}>
+    <div className="flex flex-col items-start gap-8">
+      <div className="flex justify-center gap-6">
         <SocialMediaIcon
-          size="24px"
+          size="sm"
           icon={<FaLinkedin size={"100%"} />}
           link="https://www.linkedin.com/in/felipe-pepe/"
         />
         <SocialMediaIcon
-          size="24px"
+          size="sm"
           icon={<FaGithub size={"100%"} />}
           link="https://github.com/lipe-pepe"
         />
-      </HStack>
-      <HStack>
+      </div>
+      <div className="flex justify-center items-center gap-2">
         <SocialMediaIcon
-          size="24px"
+          size="sm"
           icon={<MdEmail size={"100%"} />}
           link="mailto:felipepepe21@gmail.com"
         />
-        <Text>felipepepe21@gmail.com</Text>
-      </HStack>
-      <HStack>
+        <p>felipepepe21@gmail.com</p>
+      </div>
+      <div className="flex justify-center items-center gap-2">
         <MdPlace />
-        <Text>{t("location")}</Text>
-      </HStack>
-    </VStack>
+        <p>{t("location")}</p>
+      </div>
+    </div>
   );
 };
 

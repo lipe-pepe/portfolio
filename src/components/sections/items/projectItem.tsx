@@ -1,7 +1,8 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Flex, HStack, Image, Link, Text, VStack } from "@chakra-ui/react";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
 interface ProjectItemProps {
   image: string;
@@ -21,63 +22,49 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   children,
 }: ProjectItemProps) => {
   return (
-    <HStack w={"100%"} alignItems={"start"} gap={8}>
-      <Flex flex={1}>
+    <div className="flex items-start w-full gap-8">
+      <div className="flex flex-1">
         <Image
-          w={"100%"}
-          objectFit="cover"
-          borderRadius={6}
           src={`/images/${image}`}
           alt={`${name} example image`}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
+          className="rounded-md object-cover"
         />
-      </Flex>
+      </div>
 
-      <VStack flex={3} alignItems={"start"}>
-        <HStack justifyContent={"space-between"} width={"100%"}>
+      <div className="flex flex-col justify-center items-start flex-3 gap-2">
+        <div className="flex items-center gap-2 justify-between w-full">
           {link ? (
-            <Link
-              href={link}
-              isExternal
-              _hover={{
-                color: "text",
-                transform: "scale(1.05)",
-                transition:
-                  "transform 0.2s ease-in-out, color 0.2s ease-in-out",
-              }}
-            >
-              <HStack>
-                <Text fontWeight={"medium"} color={"white"} fontSize={"md"}>
-                  {name}
-                </Text>
-                {link && <ExternalLinkIcon />}
-              </HStack>
+            <Link href={link} target="_blank">
+              <div className="flex items-center gap-2 transition-transform duration-200 ease-in-out hover:scale-105 hover:text-highlight">
+                <p className="font-medium text-white text-md">{name}</p>
+                {link && <FiExternalLink />}
+              </div>
             </Link>
           ) : (
-            <Text fontWeight={"medium"} color={"white"} fontSize={"md"}>
-              {name}
-            </Text>
+            <p className="font-medium text-white text-md">{name}</p>
           )}
 
           {github && (
-            <Link
-              target="_blank"
-              href={github}
-              color={"white.darkest"}
-              _hover={{ color: "white" }}
-            >
-              <FaGithub size={"24px"} />
+            <Link target="_blank" href={github}>
+              <div className="text-white-darkest hover:text-white transition-colors duration-100">
+                <FaGithub size={"24px"} />
+              </div>
             </Link>
           )}
-        </HStack>
+        </div>
 
         {description.map((d, index) => (
-          <Text my={2} key={`project_item_${name}_${index}`} fontSize={"sm"}>
-            {d}
-          </Text>
+          <div key={`project_item_${name}_${index}`} className="my-2">
+            <p className="text-sm">{d}</p>
+          </div>
         ))}
-        <HStack gap={4}>{children}</HStack>
-      </VStack>
-    </HStack>
+        <div className="flex items-center gap-4">{children}</div>
+      </div>
+    </div>
   );
 };
 
