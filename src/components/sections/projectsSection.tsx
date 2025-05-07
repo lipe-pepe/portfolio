@@ -12,6 +12,16 @@ const ProjectsSection = () => {
   return (
     <Section title={t("title")}>
       <ProjectItem
+        image={"job-searcher.png"}
+        name={t("job_searcher")}
+        description={[t("job_searcher_desc")]}
+        link="https://job-searcher-linkedin.vercel.app/"
+        github="https://github.com/lipe-pepe/linkedin-search"
+      >
+        <NextIcon />
+        <TailwindIcon />
+      </ProjectItem>
+      <ProjectItem
         image={"server-components.png"}
         name={"Server Components"}
         description={[t("sc_desc1"), t("sc_desc2")]}

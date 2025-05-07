@@ -48,7 +48,9 @@
     "stiks_desc2": "I decided to develop this project entirely by myself. To do so, I studied WebSockets, UI Design, UX Design, non-relational databases, among other topics. It was a great challenge that required a lot of creativity, dedication, and organization.",
     "criasound_desc1": "I developed the landing pages for criasound, a music and artistic experience laboratory.",
     "personal_site": "Personal website",
-    "personal_site_desc1": "The old version of this website! I created this project following Next.js official guides. It is no longer live, but the code can be found on my GitHub."
+    "personal_site_desc1": "The old version of this website! I created this project following Next.js official guides. It is no longer live, but the code can be found on my GitHub.",
+    "job_searcher": "Job Searcher for LinkedIn®",
+    "job_searcher_desc": "A job search tool for LinkedIn, based on the use of logical operators in search. This project is a Single Page Application (SPA), where I used widely adopted libraries and important React features, such as the Context API."
   },
 
   "Academic": {
