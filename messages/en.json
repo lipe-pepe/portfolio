@@ -50,7 +50,9 @@
     "personal_site": "Personal website",
     "personal_site_desc1": "The old version of this website! I created this project following Next.js official guides. It is no longer live, but the code can be found on my GitHub.",
     "job_searcher": "Job Searcher for LinkedIn®",
-    "job_searcher_desc": "A job search tool for LinkedIn, based on the use of logical operators in search. This project is a Single Page Application (SPA), where I used widely adopted libraries and important React features, such as the Context API."
+    "job_searcher_desc": "A job search tool for LinkedIn, based on the use of logical operators in search. This project is a Single Page Application (SPA), where I used widely adopted libraries and important React features, such as the Context API.",
+    "enigmle": "Enigmle",
+    "enigmle_desc": "A daily puzzle game! Every day, there's a new enigma that challenges the player's knowledge and research skills. My favorite project."
   },
 
   "Academic": {

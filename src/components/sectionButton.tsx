@@ -11,7 +11,7 @@ const SectionButton: React.FC<SectionButtonProps> = ({
 }: SectionButtonProps) => {
   return (
     <button onClick={onClick}>
-      <p className="text-white-dark text-sm uppercase font-normal tracking-widest transition-colors duration-200 ease-in-out hover:text-highlight hover:font-semibold">
+      <p className="text-white-dark text-sm uppercase font-normal tracking-widest transition-colors duration-200 ease-in-out hover:text-highlight hover:font-semibold cursor-pointer">
         {text}
       </p>
     </button>

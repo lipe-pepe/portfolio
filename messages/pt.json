@@ -50,7 +50,9 @@
     "personal_site": "Site pessoal",
     "personal_site_desc1": "A versão antiga desse site aqui! Fiz esse projeto seguindo guias oficiais do NextJS. Já não está mais no ar, mas o código pode ser encontrado no meu Github. ",
     "job_searcher": "Busca de Vagas no LinkedIn®",
-    "job_searcher_desc": "Uma ferramenta de busca para vagas no LinkedIn, baseada no recurso de usar operadores lógicos na busca. Esse projeto é uma Single Page Application (SPA), em que usei libs muito utilizadas no mercado e recursos importantes do React, como a Context API."
+    "job_searcher_desc": "Uma ferramenta de busca para vagas no LinkedIn, baseada no recurso de usar operadores lógicos na busca. Esse projeto é uma Single Page Application (SPA), em que usei libs muito utilizadas no mercado e recursos importantes do React, como a Context API.",
+    "enigmle": "Enigmle",
+    "enigmle_desc": "Um jogo diário de enigmas! Todos os dias, há um novo enigma que desafia o conhecimento e as habilidades de pesquisa do jogador. Meu projeto favorito."
   },
 
   "Academic": {

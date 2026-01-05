@@ -6,11 +6,25 @@ import JavascriptIcon from "../techIcons/javascript";
 import NodeIcon from "../techIcons/node";
 import MongoIcon from "../techIcons/mongo";
 import TailwindIcon from "../techIcons/tailwind";
+import PrismaIcon from "../techIcons/prisma";
+import PostgreSQLIcon from "../techIcons/postgresql";
 
 const ProjectsSection = () => {
   const t = useTranslations("Projects");
   return (
     <Section title={t("title")}>
+      <ProjectItem
+        image={"enigmle.png"}
+        name={t("enigmle")}
+        description={[t("enigmle_desc")]}
+        link="https://enigmle.com/"
+      >
+        <JavascriptIcon />
+        <NextIcon />
+        <TailwindIcon />
+        <PrismaIcon />
+        <PostgreSQLIcon />
+      </ProjectItem>
       <ProjectItem
         image={"job-searcher.png"}
         name={t("job_searcher")}
@@ -40,14 +54,14 @@ const ProjectsSection = () => {
       >
         <JavascriptIcon /> <NodeIcon /> <NextIcon /> <MongoIcon />
       </ProjectItem>
-      <ProjectItem
+      {/* <ProjectItem
         image={"criasound.png"}
         name={"Criasound"}
         description={[t("criasound_desc1")]}
         link="https://www.criasound.com/music"
       >
         <NextIcon />
-      </ProjectItem>
+      </ProjectItem> */}
       <ProjectItem
         image={"personal_site.png"}
         name={t("personal_site")}
