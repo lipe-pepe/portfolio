@@ -2,8 +2,8 @@
   "Hero": {
     "heading": "Oi, meu nome é Felipe Pêpe.",
     "intro": "Sou um ",
-    "dev": "desenvolvedor full-stack",
-    "intro_2": "  com espírito empreendedor, apaixonado por projetos que envolvem software, criatividade e desafio."
+    "dev": " engenheiro de software",
+    "intro_2": " com atuação full-stack e espírito empreendedor, apaixonado por projetos que envolvem software, criatividade e desafio."
   },
 
   "about": "Sobre mim",
@@ -17,46 +17,65 @@
 
   "About": {
     "title": "Sobre mim",
-    "about_0": "Eu sou um desenvolvedor web brasileiro e moro no Rio de Janeiro. Estou finalizando o curso de Engenharia da Computação e Informação na UFRJ (Universidade Federal do Rio de Janeiro).",
-    "about_1": "Apesar de ter experiência de trabalho com web, também tenho interesse por desenvolvimento mobile e desenvolvimento de games. Já explorei essas áreas. Estou em busca de novos desafios para minha carreira, que possam agregar em ",
-    "things": "conhecimento, experiência e autonomia!",
-    "about_2": "O que me encanta no trabalho é poder usar a ",
+
+    "about_0": "Sou engenheiro de software no Rio de Janeiro e estou concluindo Engenharia de Computação e Informação na UFRJ. Minha experiência profissional inclui o desenvolvimento de plataformas web com Next.js, NestJS, Node.js e Ruby on Rails, além de integrações entre sistemas, testes automatizados e melhorias de desempenho.",
+    "about_1": "O que me encanta no trabalho é poder usar a ",
     "creativity": "criatividade",
-    "about_3": " e o conhecimento para construir novos projetos e ",
+    "about_2": " e o conhecimento para construir novos projetos e ",
     "happen": "fazer as coisas acontecerem",
-    "about_4": ". Não há nada melhor do que implementar uma nova funcionalidade, ultrapassar seus desafios e ver o usuário final tirando proveito da nossa criação. Essa é minha motivação!",
-    "about_5": "Além do mundo da tecnologia, sou apaixonado por games e cinema e entusiasta do teatro! Sou ator de teatro e estou desbravando o trabalho de direção também. Acho inspiradora a arte de contar histórias!"
+    "about_3": ". Não há nada melhor do que implementar uma nova funcionalidade, ultrapassar seus desafios e ver o usuário final tirando proveito da nossa criação. Essa é minha motivação!",
+    "about_4": "Fora da tecnologia, gosto de games e cinema e atuo no teatro, onde também venho explorando a direção. A arte de contar histórias é uma parte importante de quem eu sou."
   },
 
   "Experience": {
     "title": "Experiência",
+
     "1_name": "Estagiário de Desenvolvimento Web",
-    "1_desc1": "Desenvolvimento web utilizando Ruby on Rails e NextJS para alavancar a plataforma de educação corporativa Witseed by Exame",
-    "2_name": "Desenvolvedor Full-Stack",
-    "2_desc1": "Desenvolvimento web utilizando Ruby on Rails e NextJS para alavancar a plataforma de educação corporativa Witseed by Exame",
-    "2_desc2": "Ponto focal de tecnologia em reuniões com clientes para definição e desenvolvimento de integrações de Single Sign On (SSO)",
-    "2_desc3": "Participação em tomadas de decisão relacionadas ao produto e condução do suporte de atendimento aos clientes",
+    "1_desc1": "Desenvolvimento de funcionalidades para a plataforma Witseed com Next.js, TypeScript e Ruby on Rails.",
+    "1_desc2": "Investigação e correção de incidentes, criação de protótipos e documentação técnica.",
+    "1_desc3": "Automação de rotinas internas por meio de scripts.",
+    
+    "2_name": "Desenvolvedor Full-Stack Junior",
+    "2_desc1": "Desenvolvimento e manutenção da plataforma de educação corporativa Witseed by Exame com Next.js, Node.js e Ruby on Rails.",
+    "2_desc2": "Construção de APIs e implementação de integrações de autenticação, incluindo SSO corporativo.",
+    "2_desc3": "Atuação como ponto focal técnico em reuniões com clientes para definir integrações de SSO.",
+    "2_desc4": "Colaboração com Produto e suporte na definição de funcionalidades e na solução de demandas de clientes.",
+
+    "3_name": "Engenheiro de Software Pleno",
+    "3_desc1": "Desenvolvimento de plataformas internas no SomaLabs para criação, edição, visualização e aprovação de coleções das marcas do grupo, utilizando Next.js e NestJS.",
+    "3_desc2": "Implementação de histórico de edições, cadastros de matérias-primas e artes e integração de imagens entre sistemas.",
+    "3_desc3": "Integração de dados de produtos com o Linx para disponibilizá-los a outros sistemas da empresa, incluindo o e-commerce.",
+    "3_desc4": "Refatoração de páginas com renderização no servidor e streaming no Next.js para exibir conteúdo antes da conclusão do carregamento de grandes volumes de dados.",
+    "3_desc5": "Criação de aplicações, configuração de monitoramento de erros com Sentry e implementação de testes automatizados com Vitest.",
+
     "sp": "São Paulo, Brasil",
     "rj": "Rio de Janeiro, Brasil"
   },
 
   "Projects": {
     "title": "Projetos",
+
     "sc_desc1": "Um site criado durante um estudo sobre a feature de Server Components do React e seu funcionamento no Next.js. O projeto inclui exemplos práticos do funcionamento de Server e Client Components.",
     "sc_desc2": "Por enquanto, o projeto está somente em português.",
+    
     "stiks_desc1": "Um jogo online de adivinhação para ser jogado com os amigos na web! O jogo é uma adaptação da 'Purrinha', um jogo de boteco brasileiro. É um projeto pessoal que vai receber atualizações constantemente.",
     "stiks_desc2": "Decidi fazer esse projeto inteiramente sozinho. Para isso, estudei Websockets, UI Design, UX Design, banco de dados não relacional, entre outros tópicos. Foi um bom desafio que envolveu muita criatividade, dedicação e organização.",
+    
     "criasound_desc1": "Desenvolvi as landing pages da criasound, um laboratório de música e experiência artística.",
+    
     "personal_site": "Site pessoal",
     "personal_site_desc1": "A versão antiga desse site aqui! Fiz esse projeto seguindo guias oficiais do NextJS. Já não está mais no ar, mas o código pode ser encontrado no meu Github. ",
+    
     "job_searcher": "Busca de Vagas no LinkedIn®",
     "job_searcher_desc": "Uma ferramenta de busca para vagas no LinkedIn, baseada no recurso de usar operadores lógicos na busca. Esse projeto é uma Single Page Application (SPA), em que usei libs muito utilizadas no mercado e recursos importantes do React, como a Context API.",
+    
     "enigmle": "Enigmle",
     "enigmle_desc": "Um jogo diário de enigmas! Todos os dias, há um novo enigma que desafia o conhecimento e as habilidades de pesquisa do jogador. Meu projeto favorito."
   },
 
   "Academic": {
     "title": "Formação Acadêmica",
+    
     "eletronic": "Engenharia Eletrônica e de Computação",
     "ufrj": "UFRJ - Universidade Federal do Rio de Janeiro",
     "graduation": "Graduação",

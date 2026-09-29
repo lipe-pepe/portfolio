@@ -62,7 +62,7 @@ const ProjectsSection = () => {
       >
         <NextIcon />
       </ProjectItem> */}
-      <ProjectItem
+      {/* <ProjectItem
         image={"personal_site.png"}
         name={t("personal_site")}
         description={[t("personal_site_desc1")]}
@@ -71,7 +71,7 @@ const ProjectsSection = () => {
         <JavascriptIcon />
         <NextIcon />
         <TailwindIcon />
-      </ProjectItem>
+      </ProjectItem> */}
     </Section>
   );
 };

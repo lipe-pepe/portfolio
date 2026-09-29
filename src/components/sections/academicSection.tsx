@@ -8,7 +8,7 @@ const AcademicSection = () => {
     <Section title={t("title")}>
       <AcademicItem
         start="2023"
-        end={`2025 (${t("prevision")})`}
+        end={`2026 (${t("prevision")})`}
         name={t("eci")}
         type={t("graduation")}
         place={t("ufrj")}

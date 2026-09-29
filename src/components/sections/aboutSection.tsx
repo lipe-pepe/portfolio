@@ -7,20 +7,18 @@ const AboutSection = () => {
     <Section title={t("title")}>
       <p className="text-sm">
         {t("about_0")}
-        {t("about_1")}
-        <span className="font-semibold text-white">{t("things")}</span>
       </p>
       <p className="text-sm">
-        {t("about_2")}
+        {t("about_1")}
         <span className="font-semibold text-white">{t("creativity")}</span>
 
-        {t("about_3")}
+        {t("about_2")}
 
         <span className="font-semibold text-white">{t("happen")}</span>
 
-        {t("about_4")}
+        {t("about_3")}
       </p>
-      <p className="text-sm">{t("about_5")}</p>
+      <p className="text-sm">{t("about_4")}</p>
     </Section>
   );
 };
