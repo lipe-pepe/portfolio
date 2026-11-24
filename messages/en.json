@@ -70,7 +70,10 @@
     "job_searcher_desc": "A tool for searching LinkedIn jobs based on the use of logical operators in search queries. This project is a Single Page Application (SPA) in which I used widely adopted libraries and important React features, such as the Context API.",
 
     "enigmle": "Enigmle",
-    "enigmle_desc": "A daily puzzle game! Every day, a new puzzle challenges players' knowledge and research skills. My favorite project."
+    "enigmle_desc": "A daily puzzle game! Every day, a new puzzle challenges players' knowledge and research skills.",
+
+    "duplan": "Duplan",
+    "duplan_desc": "A financial planning app for couples. Each person can plan their monthly expenses, create a joint budget, and track actual spending against the planned budget. I developed it using Spec-Driven Development to specify the features before implementing them with Claude Code."
   },
 
   "Academic": {

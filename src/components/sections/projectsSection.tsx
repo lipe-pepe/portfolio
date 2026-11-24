@@ -14,6 +14,18 @@ const ProjectsSection = () => {
   return (
     <Section title={t("title")}>
       <ProjectItem
+        image={"duplan.png"}
+        name={t("duplan")}
+        description={[t("duplan_desc")]}
+        link="https://finances-app-sigma-two.vercel.app/"
+        github="https://github.com/lipe-pepe/finances-app"
+      >
+        <NextIcon />
+        <TailwindIcon />
+        <PrismaIcon />
+        <PostgreSQLIcon />
+      </ProjectItem>
+      <ProjectItem
         image={"enigmle.png"}
         name={t("enigmle")}
         description={[t("enigmle_desc")]}
@@ -35,7 +47,7 @@ const ProjectsSection = () => {
         <NextIcon />
         <TailwindIcon />
       </ProjectItem>
-      <ProjectItem
+      {/* <ProjectItem
         image={"server-components.png"}
         name={"Server Components"}
         description={[t("sc_desc1"), t("sc_desc2")]}
@@ -44,7 +56,7 @@ const ProjectsSection = () => {
       >
         <NextIcon />
         <TailwindIcon />
-      </ProjectItem>
+      </ProjectItem> */}
       <ProjectItem
         image={"stiks.png"}
         name={"Stiks!"}
